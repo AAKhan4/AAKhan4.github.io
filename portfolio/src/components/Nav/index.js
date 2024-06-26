@@ -30,6 +30,7 @@ export default function NavigationBar() {
           <Navbar.NavLink href="skills">Skills</Navbar.NavLink>
           <Navbar.NavLink href="projects">Projects</Navbar.NavLink>
           <Navbar.NavLink href="education">Education</Navbar.NavLink>
+          <Navbar.NavLink href="contact">Contact</Navbar.NavLink>
         </Navbar.NavItems>
         <Navbar.ButtonContainer>
           <Navbar.GithubButton>GitHub</Navbar.GithubButton>
@@ -68,6 +69,14 @@ export default function NavigationBar() {
             }}
           >
             Education
+          </Navbar.MobileMenuLink>
+          <Navbar.MobileMenuLink
+            href="contact"
+            onClick={() => {
+              setOpen(!open);
+            }}
+          >
+            Contact
           </Navbar.MobileMenuLink>
           <Navbar.GithubButton
             style={{ display: "block", maxWidth: "105px", fontSize: "1.1rem" }}
