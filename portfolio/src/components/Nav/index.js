@@ -1,6 +1,7 @@
 import React from "react";
 import * as Navbar from "./NavComponents";
 import { FaBars } from "react-icons/fa";
+import { Bio } from "../../data/Info";
 
 export default function NavigationBar() {
   const [open, setOpen] = React.useState(false);
@@ -18,7 +19,7 @@ export default function NavigationBar() {
             }}
           >
             <Navbar.HomeIcon />
-            <Navbar.Span>Portfolio</Navbar.Span>
+            <Navbar.Span>{Bio.name}</Navbar.Span>
           </div>
         </Navbar.NavLogo>
         <Navbar.MobileIcon>
