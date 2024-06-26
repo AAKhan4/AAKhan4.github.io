@@ -2,6 +2,7 @@ import React from "react";
 import * as About from "./AboutComponents";
 import { Bio } from "../../data/Info";
 import Typewriter from "typewriter-effect";
+import SelfImg from "../../images/Placeholder.png";
 
 export default function Intro() {
   return (
@@ -17,16 +18,27 @@ export default function Intro() {
               I'm a{" "}
               <About.Span>
                 <Typewriter
-                  options={{ strings: Bio.roles, autoStart: true, loop: true }}
+                  onInit={(typewriter) => {
+                    Bio.roles.forEach((role) => {
+                      typewriter.typeString(role);
+                    });
+                    typewriter.start();
+                  }}
+                  options={{
+                    autoStart: true,
+                    loop: false,
+                  }}
                 />
               </About.Span>
             </About.TextLoop>
             <About.Subtitle>{Bio.description}</About.Subtitle>
-            <About.ResumeButton href={Bio.resume} target="_blank">
+            <About.ResumeButton href={Bio.resume}>
               Resume
             </About.ResumeButton>
           </About.LeftContainer>
-          <About.RightContainer></About.RightContainer>
+          <About.RightContainer>
+            <About.Image src={SelfImg} alt={Bio.name} />
+          </About.RightContainer>
         </About.InnerContainer>
       </About.IntroContainer>
     </div>
