@@ -169,7 +169,6 @@ const MobileMenuLink = styled(Link)`
 
 export default function Navbar() {
   const [open, setOpen] = React.useState(false);
-  const theme = useTheme();
   return (
     <Nav>
       <NavContainer>
