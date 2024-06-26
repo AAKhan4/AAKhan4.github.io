@@ -92,7 +92,7 @@ export const ButtonContainer = styled.div`
   width: 80%;
   height: 100%;
   padding: 0 6px;
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `;
