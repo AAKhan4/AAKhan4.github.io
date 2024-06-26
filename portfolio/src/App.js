@@ -7,6 +7,7 @@ import Skills from "./components/Skills";
 import Education from "./components/Education";
 import { BrowserRouter as Router } from "react-router-dom";
 import { useState } from "react";
+import Contact from "./components/Contact";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -43,6 +44,7 @@ function App() {
             <Skills />
             <Education />
           </Wrapper>
+          <Contact />
         </Body>
       </Router>
     </ThemeProvider>
