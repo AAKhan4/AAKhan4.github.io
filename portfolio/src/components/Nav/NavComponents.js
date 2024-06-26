@@ -59,7 +59,7 @@ export const MobileIcon = styled.div`
   }
 `;
 
-const NavItems = styled.ul`
+export const NavItems = styled.ul`
   width: 100%;
   display: flex;
   justify-content: center;
