@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Nav = styled.div`
-  background-color: ${({ theme }) => theme.card_Light};
+  background-color: ${({ theme }) => theme.card_light};
   height: 80px;
   display: flex;
   justify-content: center;
@@ -54,7 +54,7 @@ const MobileIcon = styled.div`
   }
 `;
 
-const NavItems = styled.url`
+const NavItems = styled.ul`
   width: 100%;
   display: flex;
   justify-content: center;
@@ -90,7 +90,9 @@ const ButtonContainer = styled.div`
 `;
 
 const GithubButton = styled.button`
-    border: 1.8px solid ${({ theme }) => theme.primary};
+    background-color: transparent;
+    color: ${({ theme }) => theme.primary};
+    border: 2px solid ${({ theme }) => theme.primary};
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -101,6 +103,7 @@ const GithubButton = styled.button`
     cursor: pointer;
     height: 70%;
     :hover {
+        color: ${({ theme }) => theme.text_primary};
         background-color: ${({ theme }) => theme.primary}};
     }
     @media screen and (max-width: 640px) {
