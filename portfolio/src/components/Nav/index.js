@@ -51,8 +51,8 @@ const MobileIcon = styled.div`
   display: none;
   @media screen and (max-width: 768px) {
     display: block;
-    positionl: absolute;
-    top: 0;
+    position: absolute;
+    top: 2;
     right: 0;
     transform: translate(-100%, 50%);
     font-size: 1.5rem;
@@ -82,6 +82,9 @@ const NavLink = styled.a`
   &:hover {
     color: ${({ theme }) => theme.primary};
   }
+  &:active {
+    color: ${({ theme }) => theme.primary};
+  }
 `;
 
 const ButtonContainer = styled.div`
@@ -96,7 +99,7 @@ const ButtonContainer = styled.div`
   }
 `;
 
-const GithubButton = styled.button`
+const GithubButton = styled.a`
   background-color: transparent;
   color: ${({ theme }) => theme.primary};
   border: 2px solid ${({ theme }) => theme.primary};
@@ -143,20 +146,23 @@ const MobileMenu = styled.div`
   padding: 12px 40px 24px 40px;
   background: ${({ theme }) => theme.card_light + 99};
   transition: all 0.3s ease-in-out;
-  transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
+  transform: ${({ open }) => (open ? "translateY(0)" : "translateY(-100%)")};
   border-radius: 0 0 20 20px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-  opacity: ${({ open }) => (open ? "1" : "0")};
-  z-index: ${({ open }) => (open ? "1" : "-1")};
+  opacity: ${({ open }) => (open ? "100%" : "0")};
+  z-index: ${({ open }) => (open ? "1000" : "-1000")};
 `;
 
-const MobileMenuLinks = styled(Link)`
+const MobileMenuLink = styled(Link)`
   color: ${({ theme }) => theme.text_primary};
   font-weight: 500;
   cursor: pointer;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
   &:hover {
+    color: ${({ theme }) => theme.primary};
+  }
+  &:active {
     color: ${({ theme }) => theme.primary};
   }
 `;
@@ -168,7 +174,7 @@ export default function Navbar() {
     <Nav>
       <NavContainer>
         <NavLogo to="/">
-          <a
+          <div
             style={{
               color: "inherit",
               textDecoration: "none",
@@ -176,11 +182,10 @@ export default function Navbar() {
               alignItems: "center",
               display: "flex",
             }}
-            href="/"
           >
             <HomeIcon />
             <Span>Portfolio</Span>
-          </a>
+          </div>
         </NavLogo>
         <MobileIcon>
           <FaBars onClick={() => setOpen(!open)} />
@@ -197,27 +202,42 @@ export default function Navbar() {
       </NavContainer>
       {open && (
         <MobileMenu open={open}>
-          <MobileMenuLinks href="about" onClick={setOpen(!open)}>
-            About
-          </MobileMenuLinks>
-          <MobileMenuLinks href="skills" onClick={setOpen(!open)}>
-            Skills
-          </MobileMenuLinks>
-          <MobileMenuLinks href="projects" onClick={setOpen(!open)}>
-            Projects
-          </MobileMenuLinks>
-          <MobileMenuLinks href="education" onClick={setOpen(!open)}>
-            Education
-          </MobileMenuLinks>
-          <GithubButton
-            style={{
-              padding: "10px 16px",
-              background: `${({ theme }) => theme.primary}`,
-              color: "f1f2f3",
-              width: "max-content",
+          <MobileMenuLink
+            href="about"
+            onClick={() => {
+              setOpen(!open);
             }}
           >
-            GitHub
+            About
+          </MobileMenuLink>
+          <MobileMenuLink
+            href="skills"
+            onClick={() => {
+              setOpen(!open);
+            }}
+          >
+            Skills
+          </MobileMenuLink>
+          <MobileMenuLink
+            href="projects"
+            onClick={() => {
+              setOpen(!open);
+            }}
+          >
+            Projects
+          </MobileMenuLink>
+          <MobileMenuLink
+            href="education"
+            onClick={() => {
+              setOpen(!open);
+            }}
+          >
+            Education
+          </MobileMenuLink>
+          <GithubButton
+            style={{ display: "block", maxWidth: "105px", fontSize: "1.1rem" }}
+          >
+            Github
           </GithubButton>
         </MobileMenu>
       )}
