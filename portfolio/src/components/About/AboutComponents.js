@@ -67,7 +67,7 @@ export const LeftContainer = styled.div`
 `;
 
 export const RightContainer = styled.div`
-  width: 55%;
+  width: 50%;
   display: flex;
   order: 2;
   justify-content: end;
@@ -101,7 +101,7 @@ export const Title = styled.div`
 export const TextLoop = styled.div`
   font-size: 32px;
   font-weight: 600;
-  color: ${({ theme }) => theme.text_secondary};
+  color: ${({ theme }) => theme.text_primary};
   line-height: 68px;
   gap: 12px;
   display: flex;
