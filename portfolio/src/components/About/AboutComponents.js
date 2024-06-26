@@ -84,3 +84,87 @@ export const RightContainer = styled.div`
     margin-bottom: 30px;
   }
 `;
+
+export const Title = styled.div`
+  font-size: 50px;
+  font-weight: 700;
+  color: ${({ theme }) => theme.text_primary};
+  line-height: 68px;
+  @media screen and (max-width: 960px) {
+    text-align: center;
+  }
+  @media screen and (max-width: 640px) {
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 8px;
+  }
+`;
+
+export const TextLoop = styled.div`
+  font-size: 32px;
+  font-weight: 600;
+  color: ${({ theme }) => theme.text_secondary};
+  line-height: 68px;
+  gap: 12px;
+  display: flex;
+  @media screen and (max-width: 960px) {
+    text-align: center;
+  }
+  @media screen and (max-width: 640px) {
+    font-size: 22px;
+    line-height: 48px;
+    margin-bottom: 16px;
+  }
+`;
+
+export const Span = styled.span`
+  color: ${({ theme }) => theme.primary};
+  cursor: pointer;
+`;
+
+export const Subtitle = styled.div`
+  font-size: 20px;
+  color: ${({ theme }) => theme.text_primary + 90};
+  line-height: 32px;
+  margin-bottom: 42px;
+  @media screen and (max-width: 960px) {
+    text-align: center;
+  }
+  @media screen and (max-width: 640px) {
+    font-size: 16px;
+    line-height: 32px;
+  }
+`;
+
+export const ResumeButton = styled.a`
+  -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    width: 95%;
+    max-width: 300px;
+    text-align: center;
+    padding: 16px 0;
+    color:${({ theme }) => theme.white};
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out !important;
+    background: hsla(271, 100%, 50%, 1);
+    background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
+    background: -moz-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
+    background: -webkit-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
+    box-shadow:  20px 20px 60px #1F2634,
+    -20px -20px 60px #1F2634;
+    &:hover {
+        transform: scale(1.05);
+    transition: all 0.4s ease-in-out;
+    box-shadow:  20px 20px 60px #1F2634,
+    filter: brightness(1);
+    }    
+    @media (max-width: 640px) {
+        padding: 12px 0;
+        font-size: 18px;
+    }
+`;
