@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 const Nav = styled.div`
@@ -52,6 +51,29 @@ const MobileIcon = styled.div`
     font-size: 1.5rem;
     cursor: pointer;
     color: ${({ theme }) => theme.text_primary};
+  }
+`;
+
+const NavItems = styled.url`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  list-style: none;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
+
+const NavLink = styled.a`
+  color: ${({ theme }) => theme.text_primary};
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    color: ${({ theme }) => theme.primary};
   }
 `;
 
