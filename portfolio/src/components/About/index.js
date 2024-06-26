@@ -12,7 +12,7 @@ export default function Intro() {
         <About.InnerContainer>
           <About.LeftContainer>
             <About.Title>
-              Hello, I'm <br /> {Bio.name}
+              Hello, I am <br /> {Bio.name}
             </About.Title>
             <About.TextLoop>
               I'm a{" "}
