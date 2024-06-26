@@ -211,12 +211,14 @@ export default function Navbar() {
           </MobileMenuLinks>
           <GithubButton
             style={{
-                padding: "10px 16px",
-                background: `${({ theme }) => theme.primary}`,
-                color: "f1f2f3",
-                width: "max-content",
+              padding: "10px 16px",
+              background: `${({ theme }) => theme.primary}`,
+              color: "f1f2f3",
+              width: "max-content",
             }}
-          >GitHub</GithubButton>
+          >
+            GitHub
+          </GithubButton>
         </MobileMenu>
       )}
     </Nav>
