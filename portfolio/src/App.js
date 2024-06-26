@@ -2,7 +2,7 @@ import "./App.css";
 import styled, { ThemeProvider } from "styled-components";
 import { darkTheme } from "./utils/Themes";
 import Nav from "./components/Nav";
-import Intro from "./components/Intro";
+import Intro from "./components/About";
 import Skills from "./components/Skills";
 import Education from "./components/Education";
 import { BrowserRouter as Router } from "react-router-dom";
