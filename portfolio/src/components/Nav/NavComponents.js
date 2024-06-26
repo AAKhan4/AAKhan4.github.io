@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { MdHome } from "react-icons/md";
 
 export const Nav = styled.div`
-  background-color: ${({ theme }) => theme.card_light};
+  background-color: ${({ theme }) => theme.card};
   height: 80px;
   display: flex;
   justify-content: center;
@@ -110,8 +110,8 @@ export const GithubButton = styled.a`
   font-weight: 500;
   cursor: pointer;
   height: 70%;
-  transition: background 0.2s ease-in-out,
-    color 0.2s ease-in-out;
+  transition: background 0.3s ease-in-out,
+    color 0.4s ease-in-out;
   :hover {
       color: ${({ theme }) => theme.text_primary};
       background-color: ${({ theme }) => theme.primary}};
@@ -142,7 +142,7 @@ export const MobileMenu = styled.div`
   right: 0;
   width: 100%;
   padding: 12px 40px 24px 40px;
-  background: ${({ theme }) => theme.card_light + 99};
+  background: ${({ theme }) => theme.card + 99};
   transition: all 0.3s ease-in-out;
   transform: ${({ open }) => (open ? "translateY(0)" : "translateY(-100%)")};
   border-radius: 0 0 20 20px;
