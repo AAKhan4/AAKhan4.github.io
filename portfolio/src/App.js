@@ -13,14 +13,32 @@ const Body = styled.div`
   overflow-x: hidden;
 `;
 
+const Wrapper = styled.div`
+  padding-bottom: 100px;
+  background: linear-gradient(
+      38.73deg,
+      rgba(135, 142, 255, 0.15) 0%,
+      rgba(135, 142, 255, 0) 50%
+    ),
+    linear-gradient(
+      141.27deg,
+      rgba(135, 142, 255, 0) 50%,
+      rgba(135, 142, 255, 0.15) 100%
+    );
+  width: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 40% 95%, 0 100%);
+`;
+
 function App() {
   return (
     <ThemeProvider theme={darkTheme}>
       <Nav />
       <Body>
         <Intro />
-        <Skills />
-        <Education />
+        <Wrapper>
+          <Skills />
+          <Education />
+        </Wrapper>
       </Body>
     </ThemeProvider>
   );
