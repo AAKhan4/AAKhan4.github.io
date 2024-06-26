@@ -67,20 +67,18 @@ export const LeftContainer = styled.div`
 `;
 
 export const RightContainer = styled.div`
-  width: 100%
-  order: 2;
+  width: 55%;
   display: flex;
+  order: 2;
   justify-content: end;
   gap: 12px;
-  @media screen and (max-width: 960px) {
+  @media (max-width: 960px) {
     order: 1;
-    display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 80px;
   }
-  @media screen and (max-width: 640px) {
-    order: 1;
+  @media (max-width: 640px) {
     margin-bottom: 30px;
   }
 `;
@@ -151,20 +149,45 @@ export const ResumeButton = styled.a`
     font-size: 20px;
     font-weight: 600;
     transition: all 0.2s ease-in-out !important;
-    background: hsla(271, 100%, 50%, 1);
-    background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    background: -moz-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    background: -webkit-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    box-shadow:  20px 20px 60px #1F2634,
+    background: hsla(244, 100%, 84%, 1);
+    background: linear-gradient(225deg, hsla(244, 100%, 84%, 1) 0%, hsla(226, 100%, 64%, 1) 100%);
+    background: -moz-linear-gradient(225deg, hsla(244, 100%, 84%, 1) 0%, hsla(226, 100%, 64%, 1) 100%);
+    background: -webkit-linear-gradient(225deg, hsla(244, 100%, 84%, 1) 0%, hsla(226, 100%, 64%, 1) 100%);
+    box-shadow: 20px 20px 60px #1F2634, -20px -20px 60px #232B3A;
     -20px -20px 60px #1F2634;
-    &:hover {
-        transform: scale(1.05);
-    transition: all 0.4s ease-in-out;
-    box-shadow:  20px 20px 60px #1F2634,
-    filter: brightness(1);
-    }    
     @media (max-width: 640px) {
-        padding: 12px 0;
-        font-size: 18px;
-    }
+      padding: 12px 0;
+      font-size: 18px;
+      }
+      &:hover {
+        transform: scale(1.01);
+        filter: brightness(1);
+        transition: all 0.2s ease-in-out;
+        box-shadow: 20px 20px 60px #1f2634;
+      }
+`;
+
+export const Image = styled.img`
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+  max-height: 400px;
+  border-radius: 50%;
+  border: 5px solid ${({ theme }) => theme.primary};
+  filter: brightness(0.95);
+  @media (max-width: 768px) {
+    max-width: 400px;
+    max-height: 400px;
+  }
+  @media (max-width: 640px) {
+    max-width: 280px;
+    max-height: 280px;
+  }
+  &:hover {
+    transform: scale(1.01);
+    filter: brightness(1);
+    transition: all 0.2s ease-in-out;
+    box-shadow: 20px 20px 60px #1f2634;
+  }
 `;
