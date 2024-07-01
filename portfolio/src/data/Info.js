@@ -10,3 +10,81 @@ export const Bio = {
   email: "aditya041004@gmail.com",
   resume: "PLACEHOLDER",
 };
+
+export const Skills = [
+  {
+    title: "Frontend",
+    skills: [
+      {
+        name: "React",
+        image: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
+      },
+      {
+        name: "JavaScript",
+        image: "https://cdn.iconscout.com/icon/free/png-512/javascript-2752148-2284965.png",
+      },
+      {
+        name: "HTML",
+        image: "https://cdn.iconscout.com/icon/free/png-512/html-2752158-2284975.png",
+      },
+      {
+        name: "CSS",
+        image: "https://cdn.iconscout.com/icon/free/png-512/css-131-722685.png",
+      }
+    ]
+  },
+  {
+    title: "Backend",
+    skills: [
+      {
+        name: "Node.js",
+        image: "https://cdn.iconscout.com/icon/free/png-512/node-js-1174925.png",
+      },
+      {
+        name: "Python",
+        image: "https://cdn.iconscout.com/icon/free/png-512/python-2-226051.png",
+      },
+      {
+        name: "Flask",
+        image: "https://cdn.iconscout.com/icon/free/png-512/flask-1-282599.png",
+      },
+      {
+        name: "Django",
+        image: "https://cdn.iconscout.com/icon/free/png-512/django-2-282855.png",
+      },
+      {
+        name: "Java",
+        image: "https://cdn.iconscout.com/icon/free/png-512/java-43-569305.png",
+      },
+      {
+        name: "MySQL",
+        image: "https://cdn.iconscout.com/icon/free/png-512/mysql-19-1174939.png",
+      },
+      {
+        name: "PostgreSQL",
+        image: "https://cdn.iconscout.com/icon/free/png-512/postgresql-226047.png",
+      },
+    ]
+  },
+  {
+    title: "Tools",
+    skills: [
+      {
+        name: "Git",
+        image: "https://cdn.iconscout.com/icon/free/png-512/git-225996.png",
+      },
+      {
+        name: "GitHub",
+        image: "https://cdn.iconscout.com/icon/free/png-512/github-153-675523.png",
+      },
+      {
+        name: "VS Code",
+        image: "https://cdn.iconscout.com/icon/free/png-512/visual-studio-code-1868941-1583105.png",
+      },
+      {
+        name: "Docker",
+        image: "https://cdn.iconscout.com/icon/free/png-512/docker-226091.png",
+      }
+    ]
+  }
+];
