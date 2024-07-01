@@ -1,6 +1,7 @@
 import React from "react";
+import { Skills } from "../../data/Info";
 
-export default function Skills() {
+export default function SkillsComp() {
   return (
     <Container id="skills">
       <Wrapper>
