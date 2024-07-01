@@ -86,5 +86,26 @@ export const Skills = [
         image: "https://cdn.iconscout.com/icon/free/png-512/docker-226091.png",
       }
     ]
+  },
+  {
+    title: "Languages",
+    skills: [
+      {
+        name: "Python",
+        image: "https://cdn.iconscout.com/icon/free/png-512/python-2-226051.png",
+      },
+      {
+        name: "JavaScript",
+        image: "https://cdn.iconscout.com/icon/free/png-512/javascript-2752148-2284965.png",
+      }, 
+      {
+        name: "Java",
+        image: "https://cdn.iconscout.com/icon/free/png-512/java-43-569305.png",
+      },
+      {
+        name: "C",
+        image: "https://cdn.iconscout.com/icon/free/png-512/c-57-1175191.png",
+      }
+    ]
   }
 ];
