@@ -1,28 +1,29 @@
 import React from "react";
 import { Skills } from "../../data/Info";
+import * as S from "./SkillsComponents";
 
 export default function SkillsComp() {
   return (
-    <Container id="skills">
-      <Wrapper>
-        <Title>Skills</Title>
-        <Desc></Desc>
-        <SkillsContainer>
+    <S.Container id="skills">
+      <S.Wrapper>
+        <S.Title>Skills</S.Title>
+        <S.Desc>List of Skills I have worked on.</S.Desc>
+        <S.SkillsContainer>
           {Skills.map((item) => (
-            <Skill>
-              <STitle>{item.title}</STitle>
-              <SList>
+            <S.Skill>
+              <S.STitle>{item.title}</S.STitle>
+              <S.SList>
                 {item.skills.map((skill) => (
-                  <SItem>
-                    <SImage src={skill.image} />
-                    <SName>{skill.name}</SName>
-                  </SItem>
+                  <S.SItem>
+                    <S.SImage src={skill.image} />
+                    {skill.name}
+                  </S.SItem>
                 ))}
-              </SList>
-            </Skill>
+              </S.SList>
+            </S.Skill>
           ))}
-        </SkillsContainer>
-      </Wrapper>
-    </Container>
+        </S.SkillsContainer>
+      </S.Wrapper>
+    </S.Container>
   );
 }
