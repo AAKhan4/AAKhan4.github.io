@@ -16,12 +16,7 @@ export const Container = styled.div`
   @media (max-width: 1100px) {
     padding: 10px;
     gap: 8px;
-    width: 900px;
-  }
-  @media (max-width: 1000px) {
-    padding: 10px;
-    gap: 8px;
-    width: 800px;
+    width: 850px;
   }
   @media (max-width: 900px) {
     padding: 10px;
@@ -31,12 +26,12 @@ export const Container = styled.div`
   @media (max-width: 768px) {
     padding: 10px;
     gap: 8px;
-    width: 550px;
+    width: 450px;
   }
-  @media (max-width: 600px) {
+  @media (max-width: 500px) {
     padding: 10px;
     gap: 8px;
-    width: 600px;
+    width: 300px;
   }
   &:hover{
     transform: translateY(1px);
