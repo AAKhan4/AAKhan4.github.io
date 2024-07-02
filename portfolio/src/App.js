@@ -21,16 +21,16 @@ const Wrapper = styled.div`
   padding-bottom: 100px;
   background: linear-gradient(
       38.73deg,
-      rgba(255, 150, 200, 0.15) 0%,
+      rgba(255, 150, 200, 0.15) 20%,
       rgba(175, 181, 255, 0) 50%
     ),
     linear-gradient(
       141.27deg,
       rgba(175, 181, 255, 0) 50%,
-      rgba(150, 150, 255, 0.15) 100%
+      rgba(150, 150, 255, 0.15) 80%
     );
   width: 100%;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 85% 96%, 10% 92%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 96%, 10% 98%, 0 100%);
 `;
 
 function App() {
