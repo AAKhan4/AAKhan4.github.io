@@ -1,7 +1,7 @@
 import React from "react";
 import * as P from "./ProjectComponents";
 import { Projects } from "../../data/Info";
-import Card from "../ProjectCards/Card";
+import Card from "./ProjectCards/Card";
 
 export default function ProjectsDisplay() {
   const [toggle, setToggle] = React.useState("all");

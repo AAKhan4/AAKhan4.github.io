@@ -1,5 +1,5 @@
-import { Institution } from "../components/EduCards/CardComponents";
-import { SubTitle } from "../components/ProjectCards/CardComponents";
+import { Institution } from "../components/Education/EduCards/CardComponents";
+import { SubTitle } from "../components/Projects/ProjectCards/CardComponents";
 
 export const Bio = {
   name: "Aditya Khan",

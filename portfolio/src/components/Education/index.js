@@ -1,6 +1,6 @@
 import React from "react";
 import * as E from "./EduComponents";
-import Card from "../EduCards/Card";
+import Card from "./EduCards/Card";
 import { Education } from "../../data/Info";
 import Timeline from "@mui/lab/Timeline";
 import TimelineItem from "@mui/lab/TimelineItem";
