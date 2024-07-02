@@ -30,7 +30,7 @@ const Wrapper = styled.div`
       rgba(150, 150, 255, 0.15) 100%
     );
   width: 100%;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 95%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 40% 95%, 0 100%);
 `;
 
 function App() {
@@ -45,8 +45,10 @@ function App() {
             <Skills />
             <Education />
           </Wrapper>
-          <Projects />
-          <Contact />
+          <Wrapper>
+            <Projects />
+            <Contact />
+          </Wrapper>
         </Body>
       </Router>
     </ThemeProvider>
