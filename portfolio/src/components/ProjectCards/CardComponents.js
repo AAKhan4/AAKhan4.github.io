@@ -5,7 +5,7 @@ export const Card = styled.div`
   height: 500px;
   background-color: ${({ theme }) => theme.card};
   border-radius: 10px;
-  box-shadow: -5px 5px 20px ${({ theme }) => theme.black};
+  box-shadow: -5px 5px 20px ${({ theme }) => theme.black+80};
   overflow: hidden;
   transition: all 0.5s ease-in-out;
   padding: 26px;
