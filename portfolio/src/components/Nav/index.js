@@ -33,7 +33,12 @@ export default function NavigationBar() {
           <Navbar.NavLink href="contact">Contact</Navbar.NavLink>
         </Navbar.NavItems>
         <Navbar.ButtonContainer>
-          <Navbar.GithubButton href="/">GitHub</Navbar.GithubButton>
+          <Navbar.GithubButton
+            href="https://github.com/AAKhan4"
+            target="_Blank"
+          >
+            GitHub
+          </Navbar.GithubButton>
         </Navbar.ButtonContainer>
       </Navbar.NavContainer>
       {open && (
@@ -79,7 +84,8 @@ export default function NavigationBar() {
             Contact
           </Navbar.MobileMenuLink>
           <Navbar.GithubButton
-            href="/"
+            href="https://github.com/AAKhan4"
+            target="_Blank"
             style={{ display: "block", maxWidth: "105px", fontSize: "1.1rem" }}
           >
             Github
