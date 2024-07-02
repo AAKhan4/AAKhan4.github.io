@@ -36,7 +36,7 @@ export const Container = styled.div`
   &:hover{
     transform: translateY(1px);
     box-shadow: -5px 5px 10px ${({ theme }) => theme.primary+99};
-    background-color: ${({ theme }) => theme.card_light+80};
+    background-color: ${({ theme }) => theme.card+80};
   }
 `;
 
