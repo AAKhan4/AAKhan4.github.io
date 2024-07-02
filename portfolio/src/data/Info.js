@@ -88,7 +88,7 @@ export const Skills = [
     ]
   },
   {
-    title: "Languages",
+    title: "Programming Languages",
     skills: [
       {
         name: "Python",
