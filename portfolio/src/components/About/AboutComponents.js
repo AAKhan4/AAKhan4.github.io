@@ -16,26 +16,6 @@ export const IntroContainer = styled.div`
   clip-path: polygon(0, 100%, 0, 100%, 100%, 70%, 95%, 0, 100%);
 `;
 
-export const Bg = styled.div`
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  top: 50%;
-  right: 0;
-  bottom: 0;
-  left: 50%;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  padding: 0 30px;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  @media screen and (max-width: 960px) {
-    padding: 0 0px;
-    justify-content: center;
-  }
-`;
-
 export const InnerContainer = styled.div`
   display: flex;
   justify-content: space-between;
@@ -135,6 +115,7 @@ export const Subtitle = styled.div`
 `;
 
 export const ResumeButton = styled.a`
+  cursor: poiner;
   -webkit-appearance: button;
   -moz-appearance: button;
   appearance: button;
@@ -143,16 +124,28 @@ export const ResumeButton = styled.a`
   max-width: 300px;
   text-align: center;
   padding: 16px 0;
-  color:${({ theme }) => theme.white};
+  color: ${({ theme }) => theme.text_primary};
   border-radius: 20px;
-  cursor: pointer;
   font-size: 20px;
   font-weight: 600;
   transition: all 0.2s ease-in-out !important;
   background: hsla(244, 100%, 84%, 1);
-  background: linear-gradient(225deg, hsla(244, 100%, 84%, 1) 0%, hsla(226, 100%, 64%, 1) 100%);
-  background: -moz-linear-gradient(225deg, hsla(244, 100%, 84%, 1) 0%, hsla(226, 100%, 64%, 1) 100%);
-  background: -webkit-linear-gradient(225deg, hsla(244, 100%, 84%, 1) 0%, hsla(226, 100%, 64%, 1) 100%);
+  background: linear-gradient(
+    225deg,
+    hsla(244, 100%, 84%, 1) 0%,
+    hsla(226, 100%, 64%, 1) 100%
+  );
+  background: -moz-linear-gradient(
+    225deg,
+    hsla(244, 100%, 84%, 1) 0%,
+    hsla(226, 100%, 64%, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    225deg,
+    hsla(244, 100%, 84%, 1) 0%,
+    hsla(226, 100%, 64%, 1) 100%
+  );
+  box-shadow: -5px 5px 15px ${({ theme }) => theme.black + 80};
   @media (max-width: 640px) {
     padding: 12px 0;
     font-size: 18px;
@@ -161,7 +154,7 @@ export const ResumeButton = styled.a`
     transform: scale(1.01);
     filter: brightness(1);
     transition: all 0.2s ease-in-out;
-    box-shadow: -5px 5px 15px ${({ theme }) => theme.primary+50};
+    box-shadow: -5px 5px 20px ${({ theme }) => theme.primary};
   }
 `;
 
@@ -174,6 +167,8 @@ export const Image = styled.img`
   border-radius: 50%;
   border: 5px solid ${({ theme }) => theme.primary};
   filter: brightness(0.95);
+  cursor: pointer;
+  box-shadow: -5px 5px 15px ${({ theme }) => theme.black + 80};
   @media (max-width: 768px) {
     max-width: 400px;
     max-height: 400px;
@@ -186,6 +181,6 @@ export const Image = styled.img`
     transform: scale(1.01);
     filter: brightness(1);
     transition: all 0.2s ease-in-out;
-    box-shadow: -5px 5px 15px ${({ theme }) => theme.primary+50};
+    box-shadow: -5px 5px 15px ${({ theme }) => theme.primary + 50};
   }
 `;
