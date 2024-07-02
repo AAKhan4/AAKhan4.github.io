@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { MdHome } from "react-icons/md";
 
@@ -27,7 +26,7 @@ export const NavContainer = styled.div`
   max-width: 1200px;
 `;
 
-export const NavLogo = styled(Link)`
+export const NavLogo = styled.a`
   color: ${({ theme }) => theme.text_primary};
   width: 60%;
   padding: 0 6px;
