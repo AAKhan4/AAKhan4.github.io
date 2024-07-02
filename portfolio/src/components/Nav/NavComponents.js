@@ -98,6 +98,7 @@ export const ButtonContainer = styled.div`
 `;
 
 export const GithubButton = styled.a`
+  text-decoration: none
   background-color: transparent;
   color: ${({ theme }) => theme.primary};
   border: 2px solid ${({ theme }) => theme.primary};
