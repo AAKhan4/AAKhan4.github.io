@@ -7,6 +7,7 @@ export const Container = styled.div`
   position: relative;
   z-index: 1;
   align-items: center;
+  margin-bottom: 150px;
 `;
 
 export const Wrapper = styled.div`
