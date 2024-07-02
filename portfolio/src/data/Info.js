@@ -120,6 +120,7 @@ export const Projects = [
     description:
       "A personal portfolio website to showcase my projects, skills and experience.",
     tags: ["React", "JavaScript", "HTML", "CSS", "Material-UI"],
+    github: "https://github.com/AAKhan4/Portfolio"
   },
   {
     title: "Portfolio",
