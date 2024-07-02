@@ -28,8 +28,8 @@ export default function NavigationBar() {
         <Navbar.NavItems>
           <Navbar.NavLink href="about">About</Navbar.NavLink>
           <Navbar.NavLink href="skills">Skills</Navbar.NavLink>
-          <Navbar.NavLink href="projects">Projects</Navbar.NavLink>
           <Navbar.NavLink href="education">Education</Navbar.NavLink>
+          <Navbar.NavLink href="projects">Projects</Navbar.NavLink>
           <Navbar.NavLink href="contact">Contact</Navbar.NavLink>
         </Navbar.NavItems>
         <Navbar.ButtonContainer>
@@ -55,20 +55,20 @@ export default function NavigationBar() {
             Skills
           </Navbar.MobileMenuLink>
           <Navbar.MobileMenuLink
-            href="projects"
-            onClick={() => {
-              setOpen(!open);
-            }}
-          >
-            Projects
-          </Navbar.MobileMenuLink>
-          <Navbar.MobileMenuLink
             href="education"
             onClick={() => {
               setOpen(!open);
             }}
           >
             Education
+          </Navbar.MobileMenuLink>
+          <Navbar.MobileMenuLink
+            href="projects"
+            onClick={() => {
+              setOpen(!open);
+            }}
+          >
+            Projects
           </Navbar.MobileMenuLink>
           <Navbar.MobileMenuLink
             href="contact"
