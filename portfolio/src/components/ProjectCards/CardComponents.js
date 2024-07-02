@@ -12,9 +12,10 @@ export const Card = styled.div`
   display: flex;
   flex-direction: column;
   gap: 14px;
+  border:1px solid ${({ theme }) => theme.primary+40};
   &:hover {
     transform: translateY(1px);
-    box-shadow: -5px 5px 15px ${({ theme }) => theme.primary + 30};
+    box-shadow: -5px 5px 15px ${({ theme }) => theme.primary + 99};
   }
 `;
 
@@ -24,7 +25,7 @@ export const Image = styled.img`
   background-color: ${({ theme }) => theme.card_light};
   border-radius: 10px;
   object-fit: cover;
-  box-shadow: -5px 5px 15px ${({ theme }) => theme.black};
+  box-shadow: -5px 5px 5px ${({ theme }) => theme.card_light};
 `;
 
 export const Tags = styled.div`
