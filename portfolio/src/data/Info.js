@@ -1,3 +1,4 @@
+import { Institution } from "../components/EduCards/CardComponents";
 import { SubTitle } from "../components/ProjectCards/CardComponents";
 
 export const Bio = {
@@ -149,7 +150,25 @@ export const Projects = [
 ];
 
 export const Education = [
-  {},
-  {},
-  {}
+  {
+    institution: "Lancaster University",
+    degree: "BSc (Hons) Software Engineering",
+    date: "2023 - Present",
+    grades: ["Expected First Class", "Current Average: 19.4/24"],
+    desc: ". . ."
+  },
+  {
+    institution: "Lancaster University",
+    degree: "BSc (Hons) Software Engineering",
+    date: "2023 - Present",
+    grades: ["Expected First Class", "Current Average: 19.4/24"],
+    desc: ". . ."
+  },
+  {
+    institution: "Lancaster University",
+    degree: "BSc (Hons) Software Engineering",
+    date: "2023 - Present",
+    grades: ["Expected First Class", "Current Average: 19.4/24"],
+    desc: ". . ."
+  },
 ];
