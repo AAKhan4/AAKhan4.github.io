@@ -64,15 +64,14 @@ export const Details = styled.div`
     font-size: 14px;
     font-weight: 400;
     color: ${({ theme }) => theme.text_secondary};
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
     width: 100%;
-    display: flex;
+    display: -webkit-box;
+    margin-top: 4px;
     flex-direction: column;
     gap: 0px;
     padding: 0px 2px;
-`;
-
-export const Members = styled.div`
-  display: flex;
-  align-items: center;
-  padding: 10px;
 `;
