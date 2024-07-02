@@ -8,7 +8,7 @@ export default function NavigationBar() {
   return (
     <Navbar.Nav>
       <Navbar.NavContainer>
-        <Navbar.NavLogo to="/">
+        <Navbar.NavLogo href="#">
           <div
             style={{
               color: "inherit",
