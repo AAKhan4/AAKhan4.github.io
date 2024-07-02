@@ -7,10 +7,11 @@ import Skills from "./components/Skills";
 import Education from "./components/Education";
 import { BrowserRouter as Router } from "react-router-dom";
 import { useState } from "react";
+import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 
 const Body = styled.div`
-  background-color: ${({ theme }) => theme.bg};
+  background-color: ${({ theme }) => theme.card_light};
   height: 100%;
   width: 100%;
   overflow-x: hidden;
@@ -44,6 +45,7 @@ function App() {
             <Skills />
             <Education />
           </Wrapper>
+          <Projects />
           <Contact />
         </Body>
       </Router>
