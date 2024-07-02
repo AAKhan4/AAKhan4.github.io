@@ -4,7 +4,6 @@ export const Card = styled.div`
   width: 300px;
   height: 500px;
   background-color: ${({ theme }) => theme.card};
-  cursor: pointer;
   border-radius: 10px;
   box-shadow: -5px 5px 20px ${({ theme }) => theme.black};
   overflow: hidden;
