@@ -13,6 +13,9 @@ export default function Card({ project }) {
       <C.Title>{project.title}</C.Title>
       <C.SubTitle>{project.SubTitle}</C.SubTitle>
       <C.Details>{project.description}</C.Details>
+      <C.GithubButton href={project.github} target="_Blank">
+        GitHub Repository
+      </C.GithubButton>
     </C.Card>
   );
 }
