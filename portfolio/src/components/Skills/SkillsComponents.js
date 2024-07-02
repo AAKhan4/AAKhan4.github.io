@@ -53,9 +53,10 @@ export const Skill = styled.div`
   width: 100%;
   max-width: 500px;
   background-color: ${({ theme }) => theme.card};
-  border-radius: 24px;
+  border-radius: 20px;
   border: 2px solid ${({ theme }) => theme.primary};
   padding: 18px 36px;
+  transition: all 0.2s ease-in-out;
   @media (max-width: 768px) {
     max-width: 400px;
     padding: 10px 36px;
@@ -65,6 +66,7 @@ export const Skill = styled.div`
     padding: 10px 36px;
   }
   &:hover {
+    border-radius: 24px;
     border: 2px solid ${({ theme }) => theme.text_primary};
   }
 `;
@@ -94,10 +96,10 @@ export const SItem = styled.div`
   font-size: 16px;
   color: ${({ theme }) => theme.text_primary+80};
   border-radius: 12px;
-  border: 1px solid ${({theme}) => theme.primary+80};
+  border: 1px solid ${({theme}) => theme.primary+99};
   padding: 12px 16px;
   font-weight: 400;
-  transition: all 1 ease-in-out;
+  transition: all 0.2s ease-in-out;
   @media (max-width: 768px) {
     font-size: 14px;
     padding: 8px 12px;
@@ -107,6 +109,7 @@ export const SItem = styled.div`
     padding: 6px 8px;
   }
   &:hover {
+    border-radius: 16px;
     border: 1px solid ${({ theme }) => theme.text_primary};
     color: ${({ theme }) => theme.text_primary};
   }
