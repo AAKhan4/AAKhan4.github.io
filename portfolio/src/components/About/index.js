@@ -8,7 +8,6 @@ export default function Intro() {
   return (
     <div id="about">
       <About.IntroContainer>
-        <About.Bg></About.Bg>
         <About.InnerContainer>
           <About.LeftContainer>
             <About.Title>
@@ -32,7 +31,7 @@ export default function Intro() {
               </About.Span>
             </About.TextLoop>
             <About.Subtitle>{Bio.description}</About.Subtitle>
-            <About.ResumeButton href={Bio.resume}>
+            <About.ResumeButton href={Bio.resume} target="_Blank">
               Resume
             </About.ResumeButton>
           </About.LeftContainer>
