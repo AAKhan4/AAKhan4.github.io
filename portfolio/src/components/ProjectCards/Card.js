@@ -13,7 +13,6 @@ export default function Card({ project }) {
       <C.Title>{project.title}</C.Title>
       <C.SubTitle>{project.SubTitle}</C.SubTitle>
       <C.Details>{project.description}</C.Details>
-      <C.Members></C.Members>
     </C.Card>
   );
 }
