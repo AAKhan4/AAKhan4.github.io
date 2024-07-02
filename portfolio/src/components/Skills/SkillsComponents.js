@@ -57,7 +57,7 @@ export const Skill = styled.div`
   border-radius: 20px;
   border: 2px solid ${({ theme }) => theme.primary+50};
   padding: 18px 36px;
-  box-shadow: -10px 10px 15px ${({ theme }) => theme.black};
+  box-shadow: -10px 10px 15px ${({ theme }) => theme.black+80};
   @media (max-width: 768px) {
     max-width: 400px;
     padding: 10px 36px;
