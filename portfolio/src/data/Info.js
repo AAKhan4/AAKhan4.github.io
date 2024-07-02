@@ -119,7 +119,7 @@ export const Projects = [
     SubTitle: "Jun - Jul 2024",
     description:
       "A personal portfolio website to showcase my projects, skills and experience.",
-    tags: ["React", "JavaScript", "HTML", "CSS"],
+    tags: ["React", "JavaScript", "HTML", "CSS", "Material-UI"],
   },
   {
     title: "Portfolio",
@@ -145,4 +145,10 @@ export const Projects = [
       "A personal portfolio website to showcase my projects, skills and experience.",
     tags: ["React", "JavaScript", "HTML", "CSS"],
   }
+];
+
+export const Education = [
+  {},
+  {},
+  {}
 ];
