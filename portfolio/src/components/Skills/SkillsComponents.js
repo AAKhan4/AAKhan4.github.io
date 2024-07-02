@@ -55,9 +55,9 @@ export const Skill = styled.div`
   max-width: 500px;
   background-color: ${({ theme }) => theme.card};
   border-radius: 20px;
-  border: 2px solid ${({ theme }) => theme.primary};
+  border: 2px solid ${({ theme }) => theme.primary+50};
   padding: 18px 36px;
-  box-shadow: -10px 10px 20px ${({ theme }) => theme.black};
+  box-shadow: -10px 10px 15px ${({ theme }) => theme.black};
   @media (max-width: 768px) {
     max-width: 400px;
     padding: 10px 36px;
@@ -70,15 +70,15 @@ export const Skill = styled.div`
     transition: all 0.3s ease-in-out;
     transform: translateY(1px);
     border-radius: 24px;
-    border: 2px solid ${({ theme }) => theme.text_primary};
-    box-shadow: -10px 10px 15px ${({ theme }) => theme.primary+30};
+    border: 2px solid ${({ theme }) => theme.primary};
+    box-shadow: -5px 5px 10px ${({ theme }) => theme.primary+99};
   }
 `;
 
 export const STitle = styled.div`
   font-size: 28px;
   font-weight: 600;
-  color: ${({ theme }) => theme.text_secondary};
+  color: ${({ theme }) => theme.text_primary};
   margin-bottom: 20px;
   text-align: center;
 `;
@@ -116,7 +116,8 @@ export const SItem = styled.div`
     transition: all 0.3s ease-in-out;
     border-radius: 16px;
     border: 1px solid ${({ theme }) => theme.text_primary};
-    color: ${({ theme }) => theme.text_primary};
+    color: ${({ theme }) => theme.card_light};
+    background-color: ${({ theme }) => theme.text_primary+99};
     box-shadow: -4px 4px 10px ${({ theme }) => theme.text_primary+40};
   }
 `;
