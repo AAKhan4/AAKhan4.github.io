@@ -30,7 +30,7 @@ const Wrapper = styled.div`
       rgba(150, 150, 255, 0.15) 100%
     );
   width: 100%;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 40% 95%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 85% 96%, 10% 92%, 0 100%);
 `;
 
 function App() {
