@@ -136,35 +136,33 @@ export const Subtitle = styled.div`
 
 export const ResumeButton = styled.a`
   -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-    text-decoration: none;
-    width: 95%;
-    max-width: 300px;
-    text-align: center;
-    padding: 16px 0;
-    color:${({ theme }) => theme.white};
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: 600;
-    transition: all 0.2s ease-in-out !important;
-    background: hsla(244, 100%, 84%, 1);
-    background: linear-gradient(225deg, hsla(244, 100%, 84%, 1) 0%, hsla(226, 100%, 64%, 1) 100%);
-    background: -moz-linear-gradient(225deg, hsla(244, 100%, 84%, 1) 0%, hsla(226, 100%, 64%, 1) 100%);
-    background: -webkit-linear-gradient(225deg, hsla(244, 100%, 84%, 1) 0%, hsla(226, 100%, 64%, 1) 100%);
-    box-shadow: 20px 20px 60px #1F2634, -20px -20px 60px #232B3A;
-    -20px -20px 60px #1F2634;
-    @media (max-width: 640px) {
-      padding: 12px 0;
-      font-size: 18px;
-      }
-      &:hover {
-        transform: scale(1.01);
-        filter: brightness(1);
-        transition: all 0.2s ease-in-out;
-        box-shadow: 20px 20px 60px #1f2634;
-      }
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
+  width: 95%;
+  max-width: 300px;
+  text-align: center;
+  padding: 16px 0;
+  color:${({ theme }) => theme.white};
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out !important;
+  background: hsla(244, 100%, 84%, 1);
+  background: linear-gradient(225deg, hsla(244, 100%, 84%, 1) 0%, hsla(226, 100%, 64%, 1) 100%);
+  background: -moz-linear-gradient(225deg, hsla(244, 100%, 84%, 1) 0%, hsla(226, 100%, 64%, 1) 100%);
+  background: -webkit-linear-gradient(225deg, hsla(244, 100%, 84%, 1) 0%, hsla(226, 100%, 64%, 1) 100%);
+  @media (max-width: 640px) {
+    padding: 12px 0;
+    font-size: 18px;
+  }
+  &:hover {
+    transform: scale(1.01);
+    filter: brightness(1);
+    transition: all 0.2s ease-in-out;
+    box-shadow: -5px 5px 15px ${({ theme }) => theme.primary+50};
+  }
 `;
 
 export const Image = styled.img`
@@ -188,6 +186,6 @@ export const Image = styled.img`
     transform: scale(1.01);
     filter: brightness(1);
     transition: all 0.2s ease-in-out;
-    box-shadow: 20px 20px 60px #1f2634;
+    box-shadow: -5px 5px 15px ${({ theme }) => theme.primary+50};
   }
 `;
