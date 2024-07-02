@@ -1,3 +1,5 @@
+import { SubTitle } from "../components/ProjectCards/CardComponents";
+
 export const Bio = {
   name: "Aditya Khan",
   roles: [
@@ -110,4 +112,22 @@ export const Skills = [
   }
 ];
 
-export const Projects = [];
+export const Projects = [
+  {
+    title: "Portfolio",
+    type: "frontend",
+    SubTitle: "Jun - Jul 2024",
+    description:
+      "A personal portfolio website to showcase my projects, skills and experience.",
+    tags: ["React", "JavaScript", "HTML", "CSS"],
+  },
+  {
+    tags: ["React", "JavaScript", "HTML", "CSS"],
+  },
+  {
+    tags: ["React", "JavaScript", "HTML", "CSS"],
+  },
+  {
+    tags: ["React", "JavaScript", "HTML", "CSS"],
+  }
+];
