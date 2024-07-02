@@ -4,7 +4,7 @@ export const Container = styled.div`
   width: 1000px;
   border-radius: 10px;
   border: 2px solid ${({ theme }) => theme.primary+80};
-  box-shadow: -5px 5px 15px ${({ theme }) => theme.card};
+  box-shadow: -5px 5px 15px ${({ theme }) => theme.black+80};
   padding: 12px 16px;
   justify-content: space-between;
   position: relative;
@@ -36,6 +36,7 @@ export const Container = styled.div`
   &:hover{
     transform: translateY(1px);
     box-shadow: -5px 5px 10px ${({ theme }) => theme.primary+99};
+    background-color: ${({ theme }) => theme.card_light+80};
   }
 `;
 
