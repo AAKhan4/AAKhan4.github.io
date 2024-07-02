@@ -67,6 +67,7 @@ export const Skill = styled.div`
   }
   &:hover {
     transition: all 0.3s ease-in-out;
+    transform: translateY(1px);
     border-radius: 24px;
     border: 2px solid ${({ theme }) => theme.text_primary};
     box-shadow: -10px 10px 15px ${({ theme }) => theme.primary+30};
