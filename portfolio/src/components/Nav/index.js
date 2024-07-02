@@ -26,11 +26,11 @@ export default function NavigationBar() {
           <FaBars onClick={() => setOpen(!open)} />
         </Navbar.MobileIcon>
         <Navbar.NavItems>
-          <Navbar.NavLink href="about">About</Navbar.NavLink>
-          <Navbar.NavLink href="skills">Skills</Navbar.NavLink>
-          <Navbar.NavLink href="education">Education</Navbar.NavLink>
-          <Navbar.NavLink href="projects">Projects</Navbar.NavLink>
-          <Navbar.NavLink href="contact">Contact</Navbar.NavLink>
+          <Navbar.NavLink href="#about">About</Navbar.NavLink>
+          <Navbar.NavLink href="#skills">Skills</Navbar.NavLink>
+          <Navbar.NavLink href="#education">Education</Navbar.NavLink>
+          <Navbar.NavLink href="#projects">Projects</Navbar.NavLink>
+          <Navbar.NavLink href="#contact">Contact</Navbar.NavLink>
         </Navbar.NavItems>
         <Navbar.ButtonContainer>
           <Navbar.GithubButton
@@ -44,7 +44,7 @@ export default function NavigationBar() {
       {open && (
         <Navbar.MobileMenu open={open}>
           <Navbar.MobileMenuLink
-            href="about"
+            href="#about"
             onClick={() => {
               setOpen(!open);
             }}
@@ -52,7 +52,7 @@ export default function NavigationBar() {
             About
           </Navbar.MobileMenuLink>
           <Navbar.MobileMenuLink
-            href="skills"
+            href="#skills"
             onClick={() => {
               setOpen(!open);
             }}
@@ -60,7 +60,7 @@ export default function NavigationBar() {
             Skills
           </Navbar.MobileMenuLink>
           <Navbar.MobileMenuLink
-            href="education"
+            href="#education"
             onClick={() => {
               setOpen(!open);
             }}
@@ -68,7 +68,7 @@ export default function NavigationBar() {
             Education
           </Navbar.MobileMenuLink>
           <Navbar.MobileMenuLink
-            href="projects"
+            href="#projects"
             onClick={() => {
               setOpen(!open);
             }}
@@ -76,7 +76,7 @@ export default function NavigationBar() {
             Projects
           </Navbar.MobileMenuLink>
           <Navbar.MobileMenuLink
-            href="contact"
+            href="#contact"
             onClick={() => {
               setOpen(!open);
             }}
