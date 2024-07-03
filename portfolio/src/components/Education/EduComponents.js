@@ -1,6 +1,4 @@
 import styled from 'styled-components';
-import TimelineDot from '@mui/lab/TimelineDot';
-import TimelineConnector from '@mui/lab/TimelineConnector';
 
 export const Container = styled.div`
   display: flex;
