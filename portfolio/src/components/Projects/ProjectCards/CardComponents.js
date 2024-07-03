@@ -78,7 +78,7 @@ export const Details = styled.div`
 
 export const GithubButton = styled.a`
   text-decoration: none;
-  opacity: 0.8;
+  opacity: 0.9;
   background-color: transparent;
   margin-top: auto;
   margin-right: auto;
