@@ -9,6 +9,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { useState } from "react";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.card_light};
@@ -49,6 +50,7 @@ function App() {
             <Projects />
             <Contact />
           </Wrapper>
+          <Footer />
         </Body>
       </Router>
     </ThemeProvider>
