@@ -2,7 +2,12 @@ import styled from "styled-components";
 import { MdHome } from "react-icons/md";
 
 export const Nav = styled.div`
-  background-color: ${({ theme }) => theme.card};
+  background: linear-gradient(
+    to bottom,
+    ${({ theme }) => theme.card},
+    80%,
+    ${({ theme }) => theme.card_light}
+  );
   height: 80px;
   display: flex;
   justify-content: center;
@@ -99,17 +104,16 @@ export const ButtonContainer = styled.div`
 export const GithubButton = styled.a`
   text-decoration: none;
   background-color: transparent;
+  margin-left: 15px;
   color: ${({ theme }) => theme.primary};
-  border: 2px solid ${({ theme }) => theme.primary};
-  border-radius: 20px;
+  border-radius: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0px 20px;
+  padding: 4px 4px;
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
-  height: 70%;
   transition: background 0.3s ease-in-out,
     color 0.4s ease-in-out;
   :hover {
@@ -119,6 +123,37 @@ export const GithubButton = styled.a`
   @media screen and (max-width: 640px) {
       font-size: 0.8rem;
   }
+`;
+
+export const LinkedInButton = styled.a`
+  text-decoration: none;
+  background-color: transparent;
+  margin-left: 15px;
+  color: ${({ theme }) => theme.primary};
+  
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out,
+    color 0.4s ease-in-out;
+  :hover {
+      color: ${({ theme }) => theme.text_primary};
+      background-color: ${({ theme }) => theme.primary}};
+  }
+  @media screen and (max-width: 640px) {
+      font-size: 0.8rem;
+  }
+`;
+
+export const Img = styled.img`
+  width: 28px;
+  height: 28px;
+  justify-content: center;
 `;
 
 export const Span = styled.span`
