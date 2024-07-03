@@ -2,9 +2,13 @@ import React from "react";
 import * as Navbar from "./NavComponents";
 import { FaBars } from "react-icons/fa";
 import { Bio } from "../../data/Info";
+import gitLogo from "../../images/github-mark-white.svg";
+import linkedinLogo from "../../images/In-White-26@2x.png";
 
 export default function NavigationBar() {
   const [open, setOpen] = React.useState(false);
+  const ghLogo = <Navbar.Img src={gitLogo} />
+  const liLogo = <Navbar.Img src={linkedinLogo} />
   return (
     <Navbar.Nav>
       <Navbar.NavContainer>
@@ -34,11 +38,14 @@ export default function NavigationBar() {
         </Navbar.NavItems>
         <Navbar.ButtonContainer>
           <Navbar.GithubButton
-            href="https://github.com/AAKhan4"
+            href={Bio.github}
             target="_Blank"
           >
-            GitHub
+            {ghLogo}
           </Navbar.GithubButton>
+          <Navbar.LinkedInButton href={Bio.linkedin} target="_Blank">
+            {liLogo}
+          </Navbar.LinkedInButton>
         </Navbar.ButtonContainer>
       </Navbar.NavContainer>
       {open && (
@@ -84,12 +91,19 @@ export default function NavigationBar() {
             Contact
           </Navbar.MobileMenuLink>
           <Navbar.GithubButton
-            href="https://github.com/AAKhan4"
+            href={Bio.github}
             target="_Blank"
-            style={{ display: "block", maxWidth: "105px", fontSize: "1.1rem" }}
+            style={{ marginRight: "auto" }}
           >
-            Github
+            {ghLogo}
           </Navbar.GithubButton>
+          <Navbar.LinkedInButton
+            href={Bio.linkedin}
+            target="_Blank"
+            style={{ marginRight: "auto" }}
+          >
+            {liLogo}
+          </Navbar.LinkedInButton>
         </Navbar.MobileMenu>
       )}
     </Navbar.Nav>
