@@ -34,9 +34,9 @@ export const Container = styled.div`
     width: 300px;
   }
   &:hover{
-    transform: translateY(1px);
+    transform: scale(1.01);
     box-shadow: -5px 5px 10px ${({ theme }) => theme.primary+99};
-    background-color: ${({ theme }) => theme.card+80};
+    background-color: ${({ theme }) => theme.card+99};
   }
 `;
 
