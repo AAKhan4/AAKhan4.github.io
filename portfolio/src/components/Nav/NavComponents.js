@@ -84,9 +84,6 @@ export const NavLink = styled.a`
   &:hover {
     color: ${({ theme }) => theme.primary};
   }
-  &:active {
-    color: ${({ theme }) => theme.primary};
-  }
 `;
 
 export const ButtonContainer = styled.div`
@@ -114,11 +111,9 @@ export const GithubButton = styled.a`
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
-  transition: background 0.3s ease-in-out,
-    color 0.4s ease-in-out;
+  transition: all 0.3s ease-in-out;
   :hover {
-      color: ${({ theme }) => theme.text_primary};
-      background-color: ${({ theme }) => theme.primary}};
+      transform: scale(1.1);
   }
   @media screen and (max-width: 640px) {
       font-size: 0.8rem;
@@ -139,11 +134,9 @@ export const LinkedInButton = styled.a`
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
-  transition: background 0.3s ease-in-out,
-    color 0.4s ease-in-out;
+  transition: all 0.3s ease-in-out;
   :hover {
-      color: ${({ theme }) => theme.text_primary};
-      background-color: ${({ theme }) => theme.primary}};
+      transform: scale(1.1);
   }
   @media screen and (max-width: 640px) {
       font-size: 0.8rem;
