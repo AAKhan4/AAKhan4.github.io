@@ -12,9 +12,9 @@ export const Card = styled.div`
   display: flex;
   flex-direction: column;
   gap: 14px;
-  border:1px solid ${({ theme }) => theme.primary+40};
+  border:2px solid ${({ theme }) => theme.primary+40};
   &:hover {
-    transform: translateY(1px);
+    transform: scale(1.01);
     box-shadow: -5px 5px 15px ${({ theme }) => theme.primary + 99};
   }
 `;
