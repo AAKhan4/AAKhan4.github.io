@@ -20,14 +20,14 @@ const Body = styled.div`
 const Wrapper = styled.div`
   padding-bottom: 100px;
   background: linear-gradient(
-      38.73deg,
-      rgba(255, 150, 200, 0.30) 20%,
-      rgba(175, 181, 255, 0) 50%
+      40deg,
+      rgba(255, 150, 200, 0.55) 5%,
+      rgba(175, 181, 255, 0) 55%
     ),
     linear-gradient(
-      141.27deg,
-      rgba(175, 181, 255, 0) 50%,
-      rgba(150, 150, 255, 0.30) 80%
+      140deg,
+      rgba(175, 181, 255, 0) 45%,
+      rgba(150, 150, 255, 0.55) 95%
     );
   width: 100%;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 96%, 10% 98%, 0 100%);
