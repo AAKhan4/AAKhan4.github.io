@@ -5,6 +5,9 @@ import Card from "./ProjectCards/Card";
 
 export default function ProjectsDisplay() {
   const [toggle, setToggle] = React.useState("all");
+  const filterredProjects = Projects.filter(
+    (project) => project.type === toggle
+  );
   return (
     <P.Container id="projects">
       <P.Wrapper>
@@ -28,9 +31,12 @@ export default function ProjectsDisplay() {
             ? Projects.map((project) => (
                 <Card key={project.title} project={project} />
               ))
-            : Projects.filter((project) => project.type === toggle).map(
-                (project) => <Card key={project.title} project={project} />
-              )}
+            : filterredProjects.map((project) => (
+                <Card key={project.title} project={project} />
+              ))}
+          {filterredProjects.length === 0 && (
+            <P.Desc>Looking a little empty right now...</P.Desc>
+          )}
         </P.CardContainer>
       </P.Wrapper>
     </P.Container>
