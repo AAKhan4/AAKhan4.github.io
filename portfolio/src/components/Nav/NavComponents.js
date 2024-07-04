@@ -32,7 +32,7 @@ export const NavContainer = styled.div`
 export const NavLogo = styled.a`
   color: ${({ theme }) => theme.text_primary};
   padding: 0 6px;
-  width: 40%;
+  width: 50%;
   display: flex;
   justify-self: flex-start;
   cursor: pointer;
@@ -62,7 +62,7 @@ export const MobileIcon = styled.div`
 `;
 
 export const NavItems = styled.ul`
-  margin-left: 150px;
+  margin-left: 180px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -78,6 +78,7 @@ export const NavLink = styled.a`
   color: ${({ theme }) => theme.text_primary};
   font-weight: 500;
   cursor: pointer;
+  margin: 0 6px;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
   &:hover {
