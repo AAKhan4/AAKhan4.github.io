@@ -34,7 +34,7 @@ export default function ProjectsDisplay() {
             : filterredProjects.map((project) => (
                 <Card key={project.title} project={project} />
               ))}
-          {filterredProjects.length === 0 && (
+          {filterredProjects.length === 0 && toggle !== "all" && (
             <P.Desc>Looking a little empty right now...</P.Desc>
           )}
         </P.CardContainer>
