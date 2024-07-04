@@ -22,8 +22,7 @@ export default function NavigationBar() {
               display: "flex",
             }}
           >
-            <Navbar.HomeIcon />
-            <Navbar.Span>{Bio.name}</Navbar.Span>
+            <Navbar.Name>{`${Bio.name} ;`}</Navbar.Name>
           </div>
         </Navbar.NavLogo>
         <Navbar.MobileIcon>
