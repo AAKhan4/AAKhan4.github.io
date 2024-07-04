@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { MdHome } from "react-icons/md";
 
 export const Nav = styled.div`
   background: linear-gradient(
@@ -23,18 +22,17 @@ export const Nav = styled.div`
 
 export const NavContainer = styled.div`
   display: flex;
-  justified-content: space-between;
   height: 60px;
   z-index: 1;
   width: 100%;
   padding: 0 24px;
-  max-width: 1200px;
+  max-width: 1400px;
 `;
 
 export const NavLogo = styled.a`
   color: ${({ theme }) => theme.text_primary};
-  width: 60%;
   padding: 0 6px;
+  width: 40%;
   display: flex;
   justify-self: flex-start;
   cursor: pointer;
@@ -51,7 +49,7 @@ export const NavLogo = styled.a`
 
 export const MobileIcon = styled.div`
   display: none;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1000px) {
     display: block;
     position: absolute;
     top: 4px;
@@ -64,13 +62,14 @@ export const MobileIcon = styled.div`
 `;
 
 export const NavItems = styled.ul`
+  margin-left: 150px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 32px;
   list-style: none;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1000px) {
     display: none;
   }
 `;
@@ -93,7 +92,7 @@ export const ButtonContainer = styled.div`
   width: 80%;
   height: 100%;
   padding: 0 6px;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1000px) {
     display: none;
   }
 `;
@@ -115,8 +114,8 @@ export const GithubButton = styled.a`
   :hover {
       transform: scale(1.1);
   }
-  @media screen and (max-width: 640px) {
-      font-size: 0.8rem;
+  @media screen and (max-width: 1000px) {
+      margin-left: 0;
   }
 `;
 
@@ -138,8 +137,8 @@ export const LinkedInButton = styled.a`
   :hover {
       transform: scale(1.1);
   }
-  @media screen and (max-width: 640px) {
-      font-size: 0.8rem;
+  @media screen and (max-width: 1000px) {
+      margin-left: 0;
   }
 `;
 
@@ -149,15 +148,10 @@ export const Img = styled.img`
   justify-content: center;
 `;
 
-export const Span = styled.span`
+export const Name = styled.div`
   padding: 0 15px;
   font-weight: bold;
   font-size: 1.2rem;
-`;
-
-export const HomeIcon = styled(MdHome)`
-  font-size: 2rem;
-  margin-top: -5px;
 `;
 
 export const MobileMenu = styled.div`
