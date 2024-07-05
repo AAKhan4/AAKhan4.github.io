@@ -57,20 +57,20 @@ export const Skill = styled.div`
   background-color: ${({ theme }) => theme.card};
   border-radius: 20px;
   border: 2px solid ${({ theme }) => theme.primary+50};
-  padding: 18px 36px;
+  padding: 14px 28px;
   box-shadow: -10px 10px 15px ${({ theme }) => theme.black+80};
   @media (max-width: 768px) {
     max-width: 400px;
-    padding: 10px 36px;
+    padding: 10px 28px;
   }
   @media (max-width: 480px) {
     width: 300px;
-    padding: 10px 36px;
+    padding: 10px 28px;
   }
   &:hover {
     transition: all 0.3s ease-in-out;
     transform: scale(1.01);
-    border-radius: 24px;
+    border-radius: 10px;
     border: 2px solid ${({ theme }) => theme.primary};
     box-shadow: -5px 5px 10px ${({ theme }) => theme.primary+99};
   }
@@ -89,7 +89,7 @@ export const SList = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   gap: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 `;
 
 export const SItem = styled.div`
@@ -102,16 +102,16 @@ export const SItem = styled.div`
   color: ${({ theme }) => theme.text_primary+80};
   border-radius: 12px;
   border: 1px solid ${({theme}) => theme.primary+99};
-  padding: 12px 16px;
+  padding: 12px 18px;
   font-weight: 400;
   box-shadow: -4px 4px 15px ${({ theme }) => theme.black};
   @media (max-width: 768px) {
     font-size: 14px;
-    padding: 8px 12px;
+    padding: 8px 14px;
   }
   @media (max-width: 480px) {
     font-size: 12px;
-    padding: 6px 8px;
+    padding: 6px 10px;
   }
   &:hover {
     transition: all 0.3s ease-in-out;
@@ -124,8 +124,8 @@ export const SItem = styled.div`
 `;
 
 export const SImage = styled.img`
-  width: 26px;
-  height: 26px;
+  width: 27px;
+  height: 27px;
   @media (max-width: 768px) {
     width: 20px;
     height: 20px;
