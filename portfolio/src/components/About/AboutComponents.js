@@ -166,7 +166,6 @@ export const Image = styled.img`
   height: 533px;
   margin-bottom: 20%;
   gap: 0 12px;
-  cursor: pointer;
   border-radius: 40px;
   @media (max-width: 768px) {
     max-width: 250px;
