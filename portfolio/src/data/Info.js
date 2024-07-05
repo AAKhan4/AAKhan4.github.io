@@ -86,8 +86,7 @@ export const Skills = [
       },
       {
         name: "GitHub",
-        image:
-          ghLogo,
+        image: ghLogo,
       },
       {
         name: "VS Code",
@@ -153,7 +152,15 @@ export const Projects = [
     SubTitle: "Jan - Mar 2024",
     description:
       "2nd year university group project. IoT automation system with web interface & RESTful API.",
-    tags: ["Vue.js", "Bootstrap", "Python", "Flask", "MySQL", "Docker", "Postman"],
+    tags: [
+      "Vue.js",
+      "Bootstrap",
+      "Python",
+      "Flask",
+      "MySQL",
+      "Docker",
+      "Postman",
+    ],
   },
   {
     title: "Using React",
@@ -178,21 +185,26 @@ export const Education = [
     institution: "Lancaster University",
     degree: "BSc (Hons) Software Engineering",
     date: "2022 - Present",
-    grades: ["Expected First Class", "Current Average: 19.4/24", "Algorithms, Data Structures & Discrete Maths: 22.1/24", "Operating Systems: 20.5/24"],
-    desc: ". . .",
+    grades: [
+      "Expected First Class",
+      "Current Average: 19.4/24",
+      "Algorithms, Data Structures & Discrete Maths: 22.1/24",
+      "Operating Systems: 20.5/24",
+    ],
+    desc: "Completed 2 years of study in Software Engineering at Lancaster University, on track to achieve degree with first-class distinction. I have taken courses in Algorithms & Data Structures, Software Design, Operating Systems, HCI, Databases & Computer Networking. Also participated in a group studio project & created app to automate IoT devices in an intuitive manner via code blocks using Flask, Vue.js & MySQL. Looking forward to studying AI, Security & Distributed Systems in my final year.",
   },
-  {
+  { 
     institution: "International School of Amsterdam",
     degree: "International Baccalaureate Diploma",
     date: "2020 - 2022",
     grades: ["Overall 40/45", "Maths Analysis & Approaches HL: 7/7"],
-    desc: ". . .",
+    desc: "Received my Highschool & International Baccalaureate Diploma from the International School of Amsterdam. I studied Maths Analysis & Approaches, Physic & Chemistry at higher level. I honed my research, critical thinking, and problem-solving skills through my 4,000-word extended essay in Physics. This project also allowed me to explore my non-academic interests by using motion tracking technology to study and identify the 'sweet spots' on a cricket bat.",
   },
   {
     institution: "International School of Frankfurt",
     degree: "Cambridge IGCSEs",
     date: "2019 - 2020",
     grades: ["Computer Science: A*", "Mathematics: A*"],
-    desc: ". . .",
+    desc: "Attained A* in IGCSE Computer Science, Mathematics & English. During this time, I also participated in maths competitions & played in school badminton club. I also gained skills necessary for independent study & research, trying to learn topics beyond scope of my courses (for example, I learnt C++ along side my Computer Science studies), which I have continued to develop throughout my academic career.",
   },
 ];
