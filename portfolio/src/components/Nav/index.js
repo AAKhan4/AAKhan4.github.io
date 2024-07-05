@@ -2,8 +2,8 @@ import React from "react";
 import * as Navbar from "./NavComponents";
 import { FaBars } from "react-icons/fa";
 import { Bio } from "../../data/Info";
-import gitLogo from "../../images/github-mark-white.svg";
-import linkedinLogo from "../../images/In-White-26@2x.png";
+import gitLogo from "../../images/necessaryIcons/github-mark-white.svg";
+import linkedinLogo from "../../images/necessaryIcons/In-White-26@2x.png";
 
 export default function NavigationBar() {
   const [open, setOpen] = React.useState(false);

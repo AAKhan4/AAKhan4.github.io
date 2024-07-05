@@ -1,9 +1,9 @@
 import React from "react";
 import * as F from "./FooterComponents";
 import { Bio } from "../../data/Info.js";
-import gitLogo from "../../images/github-mark-white.svg";
-import linkedinLogo from "../../images/In-White-26@2x.png";
-import gmailLogo from "../../images/gmail_icon.png";
+import gitLogo from "../../images/necessaryIcons/github-mark-white.svg";
+import linkedinLogo from "../../images/necessaryIcons/In-White-26@2x.png";
+import gmailLogo from "../../images/necessaryIcons/gmail_icon.png";
 
 export default function Footer() {
   return (
