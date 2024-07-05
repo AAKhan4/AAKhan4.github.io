@@ -5,12 +5,12 @@ export const IntroContainer = styled.div`
   display: flex;
   justify-content: center;
   position: relative;
-  padding: 80px 30px;
-  @media screen and (max-width: 960px) {
-    padding: 66px 16px;
+  padding: 60px 30px;
+  @media screen and (max-width: 1100px) {
+    padding: 0px 16px;
   }
   @media screen and (max-width: 640px) {
-    padding: 32px 16px;
+    padding: 0px 16px;
   }
   z-index: 1;
   clip-path: polygon(0, 100%, 0, 100%, 100%, 70%, 95%, 0, 100%);
@@ -22,23 +22,22 @@ export const InnerContainer = styled.div`
   align-items: center;
   width: 100%;
   max-width: 1100px;
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 1100px) {
     flex-direction: column;
   }
 `;
 
 export const LeftContainer = styled.div`
-  width: 100%;
+  width: 40%;
   order: 1;
-  @media screen and (max-width: 960px) {
-    order: 2;
+  @media screen and (max-width: 1100px) {
     margin-bottom: 33px;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
   }
   @media screen and (max-width: 640px) {
-    order: 2;
     margin-bottom: 32px;
     display: flex;
     align-items: center;
@@ -47,13 +46,15 @@ export const LeftContainer = styled.div`
 `;
 
 export const RightContainer = styled.div`
-  width: 50%;
-  display: flex;
+  width: 100%;
   order: 2;
+  margin-left: 50px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
   justify-content: end;
   gap: 12px;
-  @media (max-width: 960px) {
-    order: 1;
+  @media (max-width: 1100px) {
     justify-content: center;
     align-items: center;
     margin-bottom: 80px;
@@ -68,7 +69,7 @@ export const Title = styled.div`
   font-weight: 700;
   color: ${({ theme }) => theme.text_primary};
   line-height: 68px;
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 1100px) {
     text-align: center;
   }
   @media screen and (max-width: 640px) {
@@ -85,7 +86,7 @@ export const TextLoop = styled.div`
   line-height: 68px;
   gap: 12px;
   display: flex;
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 1100px) {
     text-align: center;
   }
   @media screen and (max-width: 640px) {
@@ -105,7 +106,7 @@ export const Subtitle = styled.div`
   color: ${({ theme }) => theme.text_primary + 90};
   line-height: 32px;
   margin-bottom: 42px;
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 1100px) {
     text-align: center;
   }
   @media screen and (max-width: 640px) {
@@ -149,6 +150,7 @@ export const ResumeButton = styled.a`
   @media (max-width: 640px) {
     padding: 12px 0;
     font-size: 18px;
+    margin: 0 auto;
   }
   &:hover {
     transform: scale(1.01);
@@ -160,27 +162,41 @@ export const ResumeButton = styled.a`
 
 export const Image = styled.img`
   position: relative;
-  width: 100%;
-  height: 100%;
-  max-width: 400px;
-  max-height: 400px;
-  border-radius: 50%;
-  border: 5px solid ${({ theme }) => theme.primary};
-  filter: brightness(0.95);
+  width: 400px;
+  height: 533px;
+  margin-bottom: 20%;
+  gap: 0 12px;
   cursor: pointer;
-  box-shadow: -5px 5px 15px ${({ theme }) => theme.black + 80};
   @media (max-width: 768px) {
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 250px;
+    max-height: 333px;
   }
   @media (max-width: 640px) {
-    max-width: 280px;
-    max-height: 280px;
+    max-width: 200px;
+    max-height: 267px;
   }
   &:hover {
     transform: scale(1.01);
-    filter: brightness(1);
     transition: all 0.2s ease-in-out;
-    box-shadow: -5px 5px 15px ${({ theme }) => theme.primary + 50};
   }
+  -webkit-mask-image: 
+    linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 15%),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 15%),
+    linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 15%),
+    linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 15%),
+    linear-gradient(45deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 15%),
+    linear-gradient(135deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 15%),
+    linear-gradient(225deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 15%),
+    linear-gradient(315deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 15%);
+  mask-image: 
+    linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 15%),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 15%),
+    linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 15%),
+    linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 15%),
+    linear-gradient(45deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 15%),
+    linear-gradient(135deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 15%),
+    linear-gradient(225deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 15%),
+    linear-gradient(315deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 15%);
+  -webkit-mask-composite: destination-in;
+  mask-composite: intersect;
 `;
