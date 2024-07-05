@@ -54,7 +54,7 @@ export const SkillsContainer = styled.div`
 export const Skill = styled.div`
   width: 100%;
   max-width: 500px;
-  background-color: ${({ theme }) => theme.card};
+  background-color: ${({ theme }) => theme.card+50};
   border-radius: 20px;
   border: 2px solid ${({ theme }) => theme.primary+50};
   padding: 14px 28px;
@@ -71,6 +71,7 @@ export const Skill = styled.div`
     transition: all 0.3s ease-in-out;
     transform: scale(1.01);
     border-radius: 10px;
+    background-color: ${({ theme }) => theme.card+99};
     border: 2px solid ${({ theme }) => theme.primary};
     box-shadow: -5px 5px 10px ${({ theme }) => theme.primary+99};
   }
@@ -94,14 +95,14 @@ export const SList = styled.div`
 
 export const SItem = styled.div`
   display: flex;
-  background-color: ${({ theme }) => theme.card_light+99};
+  background-color: ${({ theme }) => theme.card_light};
   align-items: center;
   gap: 8px;
   justify-content: center;
   font-size: 16px;
   color: ${({ theme }) => theme.text_primary+80};
   border-radius: 12px;
-  border: 1px solid ${({theme}) => theme.primary+99};
+  border: 1px solid ${({theme}) => theme.primary+50};
   padding: 12px 18px;
   font-weight: 400;
   box-shadow: -4px 4px 15px ${({ theme }) => theme.black};
