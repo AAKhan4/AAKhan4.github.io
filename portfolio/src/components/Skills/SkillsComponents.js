@@ -93,7 +93,7 @@ export const SList = styled.div`
 
 export const SItem = styled.div`
   display: flex;
-  background-color: ${({ theme }) => theme.card_light};
+  background-color: ${({ theme }) => theme.card_light+99};
   align-items: center;
   gap: 8px;
   justify-content: center;
