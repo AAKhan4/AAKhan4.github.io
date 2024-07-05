@@ -1,6 +1,7 @@
 import { Institution } from "../components/Education/EduCards/CardComponents";
 import { SubTitle } from "../components/Projects/ProjectCards/CardComponents";
 import ghLogo from "../images/github-mark-white.svg";
+import flaskIcon from "../images/flask_icon.png";
 
 export const Bio = {
   name: "Aditya Khan",
@@ -10,7 +11,6 @@ export const Bio = {
     "In my final year of study at Lancaster University. Highly motivated self-sufficient learner, dedicated to expanding my skill set through independent research & online courses both within & beyond the scope of my university curriculum. Seeking internship opportunities to apply current knowledge, learn, contribute & gain real life experience working in a professional environment.",
   github: "https://github.com/AAKhan4",
   linkedin: "https://www.linkedin.com/in/aditya-a-khan/",
-  email: "aditya041004@gmail.com",
   resume:
     "https://www.linkedin.com/in/aditya-a-khan/overlay/1714064891861/single-media-viewer/?profileId=ACoAAEsb9vEBV0nXGgRs9RY0iMolDlx0Ki08bnc",
 };
@@ -54,8 +54,7 @@ export const Skills = [
       },
       {
         name: "Flask",
-        image:
-          "https://cdn.iconscout.com/icon/free/png-512/flask-2752072-2284915.png",
+        image: flaskIcon,
       },
       {
         name: "Django",
@@ -137,32 +136,40 @@ export const Projects = [
     SubTitle: "Jun - Jul 2024",
     description:
       "A personal portfolio website to showcase my projects, skills and experience.",
-    tags: ["React", "JavaScript", "HTML", "CSS", "Material-UI"],
+    tags: ["React", "JavaScript", "HTML", "CSS", "Material-UI", "EmailJS"],
     github: "https://github.com/AAKhan4/Portfolio",
   },
   {
-    title: "Portfolio",
-    type: "frontend",
-    SubTitle: "Jun - Jul 2024",
+    title: "Recipe App API",
+    type: "backend",
+    SubTitle: "Mar - Apr 2024",
     description:
-      "A personal portfolio website to showcase my projects, skills and experience.",
+      "Backend API for a recipe app with CRUD functionality, authentication and documentation.",
+    tags: ["Python", "PostgreSQL", "Docker", "Django", "uWSGI", "Swagger"],
+  },
+  {
+    title: "IoTA: IoT Automation",
+    type: "fullstack",
+    SubTitle: "Jan - Mar 2024",
+    description:
+      "2nd year university group project. IoT automation system with web interface & RESTful API.",
+    tags: ["Vue.js", "Bootstrap", "Python", "Flask", "MySQL", "Docker", "Postman"],
+  },
+  {
+    title: "Using React",
+    type: "frontend",
+    SubTitle: "Jun 2024",
+    description:
+      "Number of mini projects to learn React. Includes dummy movie DB, book library & bug reporter app.",
     tags: ["React", "JavaScript", "HTML", "CSS"],
   },
   {
-    title: "Portfolio",
-    type: "frontend",
-    SubTitle: "Jun - Jul 2024",
+    title: "Air Hockey Game",
+    type: "other",
+    SubTitle: "May 2023",
     description:
-      "A personal portfolio website to showcase my projects, skills and experience.",
-    tags: ["React", "JavaScript", "HTML", "CSS"],
-  },
-  {
-    title: "Portfolio",
-    type: "frontend",
-    SubTitle: "Jun - Jul 2024",
-    description:
-      "A personal portfolio website to showcase my projects, skills and experience.",
-    tags: ["React", "JavaScript", "HTML", "CSS"],
+      "A simple 2-player air hockey game built using Java Swing. First-year university coursework.",
+    tags: ["Java", "Java Swing", "Game"],
   },
 ];
 
@@ -170,22 +177,22 @@ export const Education = [
   {
     institution: "Lancaster University",
     degree: "BSc (Hons) Software Engineering",
-    date: "2023 - Present",
-    grades: ["Expected First Class", "Current Average: 19.4/24"],
+    date: "2022 - Present",
+    grades: ["Expected First Class", "Current Average: 19.4/24", "Algorithms, Data Structures & Discrete Maths: 22.1/24", "Operating Systems: 20.5/24"],
     desc: ". . .",
   },
   {
-    institution: "Lancaster University",
-    degree: "BSc (Hons) Software Engineering",
-    date: "2023 - Present",
-    grades: ["Expected First Class", "Current Average: 19.4/24"],
+    institution: "International School of Amsterdam",
+    degree: "International Baccalaureate Diploma",
+    date: "2020 - 2022",
+    grades: ["Overall 40/45", "Maths Analysis & Approaches HL: 7/7"],
     desc: ". . .",
   },
   {
-    institution: "Lancaster University",
-    degree: "BSc (Hons) Software Engineering",
-    date: "2023 - Present",
-    grades: ["Expected First Class", "Current Average: 19.4/24"],
+    institution: "International School of Frankfurt",
+    degree: "Cambridge IGCSEs",
+    date: "2019 - 2020",
+    grades: ["Computer Science: A*", "Mathematics: A*"],
     desc: ". . .",
   },
 ];
