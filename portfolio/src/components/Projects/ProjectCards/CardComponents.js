@@ -4,7 +4,7 @@ export const Card = styled.div`
   width: 300px;
   height: 500px;
   background-color: ${({ theme }) => theme.card};
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: -5px 5px 20px ${({ theme }) => theme.black+80};
   overflow: hidden;
   transition: all 0.5s ease-in-out;
@@ -15,6 +15,7 @@ export const Card = styled.div`
   border:2px solid ${({ theme }) => theme.primary+40};
   &:hover {
     transform: scale(1.01);
+    border-radius: 10px;
     box-shadow: -5px 5px 15px ${({ theme }) => theme.primary + 99};
   }
 `;
