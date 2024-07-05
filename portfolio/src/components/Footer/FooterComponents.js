@@ -7,7 +7,13 @@ export const Container = styled.div`
   position: relative;
   z-index: 1;
   align-items: center;
-  margin-bottom: 50px;
+  padding: 50px 24px;
+  background: linear-gradient(
+    to bottom,
+    ${({ theme }) => theme.card_light},
+    40%,
+    ${({ theme }) => theme.card}
+  );
 `;
 
 export const Wrapper = styled.div`
