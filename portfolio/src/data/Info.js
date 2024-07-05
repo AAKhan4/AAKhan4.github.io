@@ -63,16 +63,6 @@ export const Skills = [
         name: "Java",
         image: "https://cdn.iconscout.com/icon/free/png-512/java-43-569305.png",
       },
-      {
-        name: "MySQL",
-        image:
-          "https://cdn.iconscout.com/icon/free/png-512/mysql-19-1174939.png",
-      },
-      {
-        name: "PostgreSQL",
-        image:
-          "https://cdn.iconscout.com/icon/free/png-512/postgresql-226047.png",
-      },
     ],
   },
   {
@@ -90,10 +80,6 @@ export const Skills = [
         name: "VS Code",
         image:
           "https://cdn.iconscout.com/icon/free/png-512/visual-studio-code-1868941-1583105.png",
-      },
-      {
-        name: "Docker",
-        image: "https://cdn.iconscout.com/icon/free/png-512/docker-226091.png",
       },
     ],
   },
@@ -124,6 +110,35 @@ export const Skills = [
       },
     ],
   },
+  {
+    title: "DevOps",
+    skills: [
+      {
+        name: "Docker",
+        image:
+          "https://cdn.iconscout.com/icon/free/png-512/docker-226091.png",
+      },
+      {
+        name: "GitHub Actions",
+        image: ghLogo,
+      },
+    ],
+  },
+  {
+    title: "Database",
+    skills: [
+      {
+        name: "MySQL",
+        image:
+          "https://cdn.iconscout.com/icon/free/png-512/mysql-19-1174939.png",
+      },
+      {
+        name: "PostgreSQL",
+        image:
+          "https://cdn.iconscout.com/icon/free/png-512/postgresql-226047.png",
+      },
+    ],
+  }
 ];
 
 export const Projects = [
@@ -141,7 +156,7 @@ export const Projects = [
     type: "backend",
     SubTitle: "Mar - Apr 2024",
     description:
-      "Backend API for a recipe app with CRUD functionality, authentication and documentation.",
+      "Backend API for a recipe app with CRUD functionality. Briefly deployed using AWS - EC2.",
     tags: ["Python", "PostgreSQL", "Docker", "Django", "uWSGI", "Swagger"],
   },
   {
