@@ -7,6 +7,7 @@ export const Container = styled.div`
   box-shadow: -5px 5px 15px ${({ theme }) => theme.black+80};
   padding: 12px 16px;
   justify-content: space-between;
+  background-color: ${({ theme }) => theme.card+50};
   position: relative;
   overflow: hidden;
   display:flex;
