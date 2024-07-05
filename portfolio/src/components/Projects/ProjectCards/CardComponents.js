@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Card = styled.div`
   width: 300px;
   height: 500px;
-  background-color: ${({ theme }) => theme.card};
+  background-color: ${({ theme }) => theme.card+90};
   border-radius: 20px;
   box-shadow: -5px 5px 20px ${({ theme }) => theme.black+80};
   overflow: hidden;
@@ -12,10 +12,11 @@ export const Card = styled.div`
   display: flex;
   flex-direction: column;
   gap: 14px;
-  border:2px solid ${({ theme }) => theme.primary+40};
+  border:2px solid ${({ theme }) => theme.primary+50};
   &:hover {
     transform: scale(1.01);
     border-radius: 10px;
+    background-color: ${({ theme }) => theme.card};
     box-shadow: -5px 5px 15px ${({ theme }) => theme.primary + 99};
   }
 `;
