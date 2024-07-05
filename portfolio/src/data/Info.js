@@ -1,7 +1,5 @@
-import { Institution } from "../components/Education/EduCards/CardComponents";
-import { SubTitle } from "../components/Projects/ProjectCards/CardComponents";
-import ghLogo from "../images/github-mark-white.svg";
-import flaskIcon from "../images/flask_icon.png";
+import ghLogo from "../images/necessaryIcons/github-mark-white.svg";
+import flaskIcon from "../images/necessaryIcons/flask_icon.png";
 
 export const Bio = {
   name: "Aditya Khan",
@@ -198,7 +196,7 @@ export const Education = [
     degree: "International Baccalaureate Diploma",
     date: "2020 - 2022",
     grades: ["Overall 40/45", "Maths Analysis & Approaches HL: 7/7"],
-    desc: "Received my Highschool & International Baccalaureate Diploma from the International School of Amsterdam. I studied Maths Analysis & Approaches, Physic & Chemistry at higher level. I honed my research, critical thinking, and problem-solving skills through my 4,000-word extended essay in Physics. This project also allowed me to explore my non-academic interests by using motion tracking technology to study and identify the 'sweet spots' on a cricket bat.",
+    desc: "Received my Highschool & International Baccalaureate Diploma from the International School of Amsterdam. I studied Maths Analysis & Approaches, Physics & Chemistry at higher level. I honed my research, critical thinking, and problem-solving skills through my 4,000-word extended essay in Physics. This project also allowed me to explore my non-academic interests by using motion tracking technology to study and identify the 'sweet spots' on a cricket bat.",
   },
   {
     institution: "International School of Frankfurt",
