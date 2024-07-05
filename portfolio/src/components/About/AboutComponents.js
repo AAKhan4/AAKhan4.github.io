@@ -156,7 +156,7 @@ export const ResumeButton = styled.a`
     transform: scale(1.01);
     filter: brightness(1);
     transition: all 0.2s ease-in-out;
-    box-shadow: -5px 5px 20px ${({ theme }) => theme.primary};
+    box-shadow: 0px 0px 20px ${({ theme }) => theme.primary};
   }
 `;
 

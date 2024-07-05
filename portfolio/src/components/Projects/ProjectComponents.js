@@ -8,6 +8,7 @@ export const Container = styled.div`
   z-index: 1;
   align-items: center;
   margin-bottom: 150px;
+  padding: 60px 0;
 `;
 
 export const Wrapper = styled.div`

@@ -4,7 +4,7 @@ export const Nav = styled.div`
   background: linear-gradient(
     to bottom,
     ${({ theme }) => theme.card},
-    80%,
+    75%,
     ${({ theme }) => theme.card_light}
   );
   height: 80px;

@@ -41,7 +41,7 @@ export const Tag = styled.span`
   font-size: 12px;
   font-weight: 400;
   color: ${({ theme }) => theme.primary};
-  background-color: ${({ theme }) => theme.primary + 25};
+  background-color: ${({ theme }) => theme.primary + 30};
   padding: 2px 6px;
   border-radius: 8px;
 `;
