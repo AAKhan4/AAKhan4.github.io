@@ -21,7 +21,7 @@ export const InnerContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1400px;
   @media screen and (max-width: 1100px) {
     flex-direction: column;
   }
