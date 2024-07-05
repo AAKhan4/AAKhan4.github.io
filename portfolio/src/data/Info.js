@@ -1,5 +1,6 @@
 import { Institution } from "../components/Education/EduCards/CardComponents";
 import { SubTitle } from "../components/Projects/ProjectCards/CardComponents";
+import ghLogo from "../images/github-mark-white.svg";
 
 export const Bio = {
   name: "Aditya Khan",
@@ -53,7 +54,8 @@ export const Skills = [
       },
       {
         name: "Flask",
-        image: "https://cdn.iconscout.com/icon/free/png-512/flask-1-282599.png",
+        image:
+          "https://cdn.iconscout.com/icon/free/png-512/flask-2752072-2284915.png",
       },
       {
         name: "Django",
@@ -86,7 +88,7 @@ export const Skills = [
       {
         name: "GitHub",
         image:
-          "https://cdn.iconscout.com/icon/free/png-512/github-153-675523.png",
+          ghLogo,
       },
       {
         name: "VS Code",
@@ -119,6 +121,10 @@ export const Skills = [
       {
         name: "C",
         image: "https://cdn.iconscout.com/icon/free/png-512/c-57-1175191.png",
+      },
+      {
+        name: "C++",
+        image: "https://cdn.iconscout.com/icon/free/png-512/csharp-569563.png",
       },
     ],
   },
