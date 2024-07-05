@@ -9,9 +9,9 @@ export default function Intro() {
     <div id="about">
       <About.IntroContainer>
         <About.InnerContainer>
-          <About.LeftContainer>
+          <About.RightContainer>
             <About.Title>
-              Hello, I am <br /> {Bio.name}
+              Hello, I am {Bio.name}
             </About.Title>
             <About.TextLoop>
               I'm a{" "}
@@ -34,11 +34,12 @@ export default function Intro() {
             <About.ResumeButton href={Bio.resume} target="_Blank">
               Resume
             </About.ResumeButton>
-          </About.LeftContainer>
-          <About.RightContainer>
-            <About.Image src={SelfImg} alt={Bio.name} />
           </About.RightContainer>
+          <About.LeftContainer>
+            <About.Image src={SelfImg} alt={Bio.name} />
+          </About.LeftContainer>
         </About.InnerContainer>
+        <br/>
       </About.IntroContainer>
     </div>
   );
