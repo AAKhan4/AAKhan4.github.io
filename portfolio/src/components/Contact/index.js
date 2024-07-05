@@ -41,7 +41,7 @@ export default function Contact() {
     <C.Container id="contact">
       <C.Wrapper>
         <C.Title>Contact</C.Title>
-        <C.Desc>Connect via sending an email.</C.Desc>
+        <C.Desc>Connect via sending a message.</C.Desc>
         <C.Form ref={form} onSubmit={sendEmail}>
           <C.Input type="text" id="name" name="name" placeholder="Name *" required />
           <C.Input type="email" id="email" name="email" placeholder="Email  *" required />
