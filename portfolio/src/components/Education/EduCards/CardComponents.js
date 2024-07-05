@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 1000px;
-  border-radius: 10px;
+  border-radius: 20px;
   border: 2px solid ${({ theme }) => theme.primary+80};
   box-shadow: -5px 5px 15px ${({ theme }) => theme.black+80};
   padding: 20px 24px;
@@ -36,6 +36,7 @@ export const Container = styled.div`
   }
   &:hover{
     transform: scale(1.02);
+    border-radius: 10px;
     box-shadow: -5px 5px 10px ${({ theme }) => theme.primary+99};
     background-color: ${({ theme }) => theme.card+99};
   }
