@@ -167,6 +167,7 @@ export const Image = styled.img`
   margin-bottom: 20%;
   gap: 0 12px;
   cursor: pointer;
+  border-radius: 40px;
   @media (max-width: 768px) {
     max-width: 250px;
     max-height: 333px;
@@ -176,8 +177,10 @@ export const Image = styled.img`
     max-height: 267px;
   }
   &:hover {
-    transform: scale(1.01);
-    transition: all 0.2s ease-in-out;
+    mask-image: none;
+    -webkit-mask-image: none;
+    box-shadow: 0px 0px 40px ${({ theme }) => theme.primary+99};
+    opacity: 0.95;
   }
   -webkit-mask-image: 
     linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 15%),
