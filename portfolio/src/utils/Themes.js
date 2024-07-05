@@ -13,7 +13,7 @@ export const lightTheme = {
   primary: "#afb5ff",
   text_primary: "#1a1a1a",
   text_secondary: "#202124",
-  card: "#e1e2e3",
+  card: "#d1d2d3",
   card_light: "#f1f2f3",
   button: "#353535",
   white: "#FFFFFF",
