@@ -7,7 +7,7 @@ export const Container = styled.div`
   position: relative;
   z-index: 1;
   align-items: center;
-  padding: 50px 24px;
+  padding: 40px 24px;
   background: linear-gradient(
     to bottom,
     ${({ theme }) => theme.card_light},
