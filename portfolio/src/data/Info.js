@@ -158,6 +158,7 @@ export const Projects = [
     description:
       "Backend API for a recipe app with CRUD functionality. Briefly deployed using AWS - EC2.",
     tags: ["Python", "PostgreSQL", "Docker", "Django", "uWSGI", "Swagger"],
+    github: "https://github.com/AAKhan4/recipe-app-api"
   },
   {
     title: "IoTA: IoT Automation",
@@ -174,6 +175,7 @@ export const Projects = [
       "Docker",
       "Postman",
     ],
+    github: "https://github.com/KarrimorRifle/SCC230-GroupProject"
   },
   {
     title: "Using React",
@@ -182,6 +184,7 @@ export const Projects = [
     description:
       "Number of mini projects to learn React. Includes dummy movie DB, book library & bug reporter app.",
     tags: ["React", "JavaScript", "HTML", "CSS"],
+    github: "https://github.com/AAKhan4/UsingReact"
   },
   {
     title: "Air Hockey Game",
@@ -190,6 +193,7 @@ export const Projects = [
     description:
       "A simple 2-player air hockey game built using Java Swing. First-year university coursework.",
     tags: ["Java", "Java Swing", "Game"],
+    github: "https://github.com/AAKhan4/SCC110_CW24"
   },
 ];
 
