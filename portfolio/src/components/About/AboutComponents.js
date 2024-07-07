@@ -156,24 +156,29 @@ export const ResumeButton = styled.a`
     transform: scale(1.01);
     filter: brightness(1);
     transition: all 0.2s ease-in-out;
-    box-shadow: 0px 0px 20px ${({ theme }) => theme.primary};
+    box-shadow: 0px 0px 40px ${({ theme }) => theme.primary+50};
   }
 `;
 
 export const Image = styled.img`
   position: relative;
-  width: 400px;
-  height: 533px;
-  margin-bottom: 20%;
+  width: 100%;
+  height: 450px;
+  display: block;
+  margin-top: 10px;
   gap: 0 12px;
   border-radius: 40px;
+  @media (max-width: 960px) {
+    max-width: 350px;
+    max-height: 400px;
+  }
   @media (max-width: 768px) {
     max-width: 250px;
-    max-height: 333px;
+    max-height: 300px;
   }
   @media (max-width: 640px) {
     max-width: 200px;
-    max-height: 267px;
+    max-height: 250px;
   }
   &:hover {
     mask-image: none;
@@ -182,23 +187,23 @@ export const Image = styled.img`
     opacity: 0.95;
   }
   -webkit-mask-image: 
-    linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 15%),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 15%),
-    linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 15%),
-    linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 15%),
-    linear-gradient(45deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 15%),
-    linear-gradient(135deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 15%),
-    linear-gradient(225deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 15%),
-    linear-gradient(315deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 15%);
+    linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 10%),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 10%),
+    linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 10%),
+    linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 10%),
+    linear-gradient(45deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 10%),
+    linear-gradient(135deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 10%),
+    linear-gradient(225deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 10%),
+    linear-gradient(315deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 10%);
   mask-image: 
-    linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 15%),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 15%),
-    linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 15%),
-    linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 15%),
-    linear-gradient(45deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 15%),
-    linear-gradient(135deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 15%),
-    linear-gradient(225deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 15%),
-    linear-gradient(315deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 15%);
+    linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 7%),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 7%),
+    linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 10%),
+    linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 10%),
+    linear-gradient(45deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 10%),
+    linear-gradient(135deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 10%),
+    linear-gradient(225deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 10%),
+    linear-gradient(315deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 10%);
   -webkit-mask-composite: destination-in;
   mask-composite: intersect;
 `;
