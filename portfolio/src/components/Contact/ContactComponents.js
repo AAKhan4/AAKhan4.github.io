@@ -53,7 +53,7 @@ export const Form = styled.form`
   width: 600px;
   height: 500px;
   border-radius: 10px;
-  border: 2px solid ${({ theme }) => theme.primary+50};
+  border: 2px solid ${({ theme }) => theme.primary+80};
   background-color: ${({ theme }) => theme.card};
   box-shadow: -5px 5px 15px ${({ theme }) => theme.black+80};
   padding: 24px;
