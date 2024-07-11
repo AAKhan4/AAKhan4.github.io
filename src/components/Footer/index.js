@@ -1,5 +1,5 @@
 import React from "react";
-import * as F from "./FooterComponents";
+import * as F from "./FooterComponents.js";
 import { Bio } from "../../data/Info.js";
 import gitLogo from "../../images/necessaryIcons/github-mark-white.svg";
 import linkedinLogo from "../../images/necessaryIcons/In-White-26@2x.png";
