@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bf538fe7.css",
+    "main.js": "/static/js/main.f9a24faa.js",
+    "static/media/flask_icon.png": "/static/media/flask_icon.6a0e7bc6c066fb4bb600.png",
+    "static/media/gmail_icon.png": "/static/media/gmail_icon.f41084677f9f5090e50b.png",
+    "static/media/github-mark-white.svg": "/static/media/github-mark-white.97ed8e7eef60d61ca469881dd6f34511.svg",
+    "index.html": "/index.html",
+    "main.bf538fe7.css.map": "/static/css/main.bf538fe7.css.map",
+    "main.f9a24faa.js.map": "/static/js/main.f9a24faa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bf538fe7.css",
+    "static/js/main.f9a24faa.js"
+  ]
+}
