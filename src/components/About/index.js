@@ -2,7 +2,7 @@ import React from "react";
 import * as About from "./AboutComponents";
 import { Bio } from "../../data/Info";
 import Typewriter from "typewriter-effect";
-import SelfImg from "../../images/profile/Placeholder.png";
+import SelfImg from "../../images/profile/Placeholder.jpg";
 
 export default function Intro() {
   return (
