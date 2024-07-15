@@ -49,7 +49,7 @@ export const NavLogo = styled.a`
 
 export const MobileIcon = styled.div`
   display: none;
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1200px) {
     display: block;
     position: absolute;
     top: 4px;
@@ -69,7 +69,7 @@ export const NavItems = styled.ul`
   align-items: center;
   gap: 32px;
   list-style: none;
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1200px) {
     display: none;
   }
 `;
@@ -93,7 +93,7 @@ export const ButtonContainer = styled.div`
   width: 80%;
   height: 100%;
   padding: 0 6px;
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1200px) {
     display: none;
   }
 `;
@@ -115,7 +115,7 @@ export const GithubButton = styled.a`
   :hover {
       transform: scale(1.1);
   }
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1200px) {
       margin-left: 0;
   }
 `;
@@ -138,7 +138,7 @@ export const LinkedInButton = styled.a`
   :hover {
       transform: scale(1.1);
   }
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1200px) {
       margin-left: 0;
   }
 `;
@@ -171,7 +171,7 @@ export const MobileMenu = styled.div`
   border-radius: 0 0 20 20px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   opacity: ${({ open }) => (open ? "100%" : "0")};
-  z-index: ${({ open }) => (open ? "1000" : "-1000")};
+  z-index: ${({ open }) => (open ? "1200" : "-1200")};
 `;
 
 export const MobileMenuLink = styled.a`
