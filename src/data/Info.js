@@ -46,6 +46,11 @@ export const Skills = [
           "https://cdn.iconscout.com/icon/free/png-512/node-js-1174925.png",
       },
       {
+        name: "Express",
+        image:
+          "https://cdn.iconscout.com/icon/free/png-512/express-3-1175029.png",
+      },
+      {
         name: "Python",
         image:
           "https://cdn.iconscout.com/icon/free/png-512/python-2-226051.png",
@@ -149,7 +154,7 @@ export const Projects = [
     description:
       "A personal portfolio website to showcase my projects, skills and experience.",
     tags: ["React", "JavaScript", "HTML", "CSS", "Material-UI", "EmailJS"],
-    github: "https://github.com/AAKhan4/Portfolio",
+    github: "https://github.com/AAKhan4/AAKhan4.github.io",
   },
   {
     title: "Recipe App API",
@@ -176,6 +181,22 @@ export const Projects = [
       "Postman",
     ],
     github: "https://github.com/KarrimorRifle/SCC230-GroupProject"
+  },
+  {
+    title: "Finance Management",
+    type: "fullstack",
+    SubTitle: "Jul 2024 - PRESENT",
+    description:
+      "Web app to help track spending. To Include authentication, CRUD operations & data visualisation.",
+    tags: [
+      "React",
+      "Express",
+      "Node.js",
+      "JavaScript",
+      "JWT",
+      "MongoDB",
+    ],
+    github: "https://github.com/AAKhan4/finanace-management"
   },
   {
     title: "Using React",
