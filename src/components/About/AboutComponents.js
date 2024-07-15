@@ -161,22 +161,22 @@ export const ResumeButton = styled.a`
 
 export const Image = styled.img`
   position: relative;
-  width: 100%;
-  height: 450px;
+  width: 357px;
+  height: 500px;
   display: block;
   margin-top: 10px;
   gap: 0 12px;
   border-radius: 40px;
   @media (max-width: 960px) {
-    max-width: 350px;
+    max-width: 286px;
     max-height: 400px;
   }
   @media (max-width: 768px) {
-    max-width: 250px;
+    max-width: 214px;
     max-height: 300px;
   }
   @media (max-width: 640px) {
-    max-width: 200px;
+    max-width: 179px;
     max-height: 250px;
   }
   &:hover {
