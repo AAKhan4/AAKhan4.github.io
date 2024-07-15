@@ -90,7 +90,7 @@ export const ButtonContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: end;
-  width: 80%;
+  width: 100%;
   height: 100%;
   padding: 0 6px;
   @media screen and (max-width: 1200px) {
@@ -116,7 +116,7 @@ export const GithubButton = styled.a`
       transform: scale(1.1);
   }
   @media screen and (max-width: 1200px) {
-      margin-left: 0;
+      margin-right: 0;
   }
 `;
 
@@ -125,7 +125,6 @@ export const LinkedInButton = styled.a`
   background-color: transparent;
   margin-left: 15px;
   color: ${({ theme }) => theme.primary};
-  
   border-radius: 4px;
   display: flex;
   justify-content: center;
@@ -136,10 +135,10 @@ export const LinkedInButton = styled.a`
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   :hover {
-      transform: scale(1.1);
+    transform: scale(1.1);
   }
   @media screen and (max-width: 1200px) {
-      margin-left: 0;
+    margin-right: 0;
   }
 `;
 
@@ -165,7 +164,12 @@ export const MobileMenu = styled.div`
   right: 0;
   width: 100%;
   padding: 12px 40px 24px 40px;
-  background: ${({ theme }) => theme.card + 99};
+  background: linear-gradient(
+    to bottom,
+    ${({ theme }) => theme.card_light},
+  50%,
+    ${({ theme }) => theme.card}
+  );
   transition: all 0.3s ease-in-out;
   transform: ${({ open }) => (open ? "translateY(0)" : "translateY(-100%)")};
   border-radius: 0 0 20 20px;
@@ -178,6 +182,8 @@ export const MobileMenuLink = styled.a`
   color: ${({ theme }) => theme.text_primary};
   font-weight: 500;
   cursor: pointer;
+  align-self: end;
+  text-align: right;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
   &:hover {
